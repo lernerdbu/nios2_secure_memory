@@ -1,0 +1,826 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                              obj/default/memtest_small.o (_impure_ptr)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+                              obj/default/memtest_small.o (printf)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+                              obj/default/memtest_small.o (putchar)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                              obj/default/memtest_small.o (puts)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o) (strlen)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+                              obj/default/memtest_small.o (strtol)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o) (___vfprintf_internal_r)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o) (_ctype_)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o) (__errno)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o) (__sfvwrite_small_dev)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o) (_putc_r)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o) (_write_r)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o) (errno)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o) (__udivsi3)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+                              obj/default/memtest_small.o (alt_getchar)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o (alt_load)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o (alt_main)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+                              c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o) (write)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o) (altera_avalon_jtag_uart_read)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o) (altera_avalon_jtag_uart_write)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o) (alt_fd_list)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o) (alt_errno)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_gen2_irq_init)
+c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+                              c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o) (memcpy)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x0000000000008000 0x0000000000000020
+onchip_mem       0x0000000000008020 0x0000000000004fe0
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/memtest_small.o
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libstdc++.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libm.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a
+START GROUP
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a
+LOAD c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libm.a
+END GROUP
+LOAD c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a
+                0x0000000000008000                __alt_mem_onchip_mem = 0x8000
+
+.entry          0x0000000000008000       0x20
+ *(.entry)
+ .entry         0x0000000000008000       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+                0x0000000000008000                __reset
+                0x000000000000801c                _exit
+
+.exceptions     0x0000000000008020        0x0
+                0x0000000000008020                PROVIDE (__ram_exceptions_start = ABSOLUTE (.))
+                0x0000000000008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x0000000000008020                PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
+                0x0000000000008020                PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
+
+.text           0x0000000000008020     0x1494
+                [!provide]                        PROVIDE (stext = ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000008020       0x3c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+                0x0000000000008020                _start
+ .text          0x000000000000805c       0x70 obj/default/memtest_small.o
+                0x000000000000805c                GetInputString
+ .text.startup  0x00000000000080cc      0x4fc obj/default/memtest_small.o
+                0x00000000000080cc                main
+ .text          0x00000000000085c8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .text          0x00000000000085c8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .text._printf_r
+                0x00000000000085c8       0x3c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+                0x00000000000085c8                _printf_r
+ .text.printf   0x0000000000008604       0x48 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+                0x0000000000008604                printf
+ .text          0x000000000000864c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .text._putchar_r
+                0x000000000000864c        0x8 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+                0x000000000000864c                _putchar_r
+ .text.putchar  0x0000000000008654       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+                0x0000000000008654                putchar
+ .text          0x000000000000866c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .text._puts_r  0x000000000000866c       0x80 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                0x000000000000866c                _puts_r
+ .text.puts     0x00000000000086ec       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                0x00000000000086ec                puts
+ .text          0x00000000000086fc        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x00000000000086fc       0x1c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x00000000000086fc                strlen
+ .text          0x0000000000008718        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .text._strtol_l.constprop.0
+                0x0000000000008718      0x200 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .text._strtol_r
+                0x0000000000008918        0x4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+                0x0000000000008918                _strtol_r
+ .text.strtol_l
+                0x000000000000891c       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+                0x000000000000891c                strtol_l
+ .text.strtol   0x0000000000008934       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+                0x0000000000008934                strtol
+ .text          0x000000000000894c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .text.print_repeat
+                0x000000000000894c       0x6c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .text.___vfprintf_internal_r
+                0x00000000000089b8      0x4ec c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+                0x00000000000089b8                ___vfprintf_internal_r
+ .text.__vfprintf_internal
+                0x0000000000008ea4       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+                0x0000000000008ea4                __vfprintf_internal
+ .text          0x0000000000008ebc        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+ .text          0x0000000000008ebc        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .text.__errno  0x0000000000008ebc        0xc c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+                0x0000000000008ebc                __errno
+ .text          0x0000000000008ec8        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .text.__sfvwrite_small_dev
+                0x0000000000008ec8       0xa8 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                0x0000000000008ec8                __sfvwrite_small_dev
+ .text          0x0000000000008f70        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .text.putc     0x0000000000008f70       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+                0x0000000000008f70                putc
+ .text._putc_r  0x0000000000008fc0       0x54 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+                0x0000000000008fc0                _putc_r
+ .text          0x0000000000009014        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .text._write_r
+                0x0000000000009014       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+                0x0000000000009014                _write_r
+ .text          0x0000000000009064        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .text          0x0000000000009064      0x1b4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+                0x0000000000009064                __divsi3
+                0x00000000000090e4                __modsi3
+                0x0000000000009158                __udivsi3
+                0x00000000000091bc                __umodsi3
+ .text          0x0000000000009218       0x40 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+                0x0000000000009218                alt_getchar
+ .text          0x0000000000009258       0x84 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+                0x0000000000009258                alt_load
+ .text          0x00000000000092dc       0x2c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+                0x00000000000092dc                alt_main
+ .text          0x0000000000009308       0x5c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+                0x0000000000009308                write
+ .text          0x0000000000009364       0x24 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000009364                alt_irq_init
+                0x0000000000009384                alt_sys_init
+ .text          0x0000000000009388       0x58 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x0000000000009388                altera_avalon_jtag_uart_read
+ .text          0x00000000000093e0       0x30 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00000000000093e0                altera_avalon_jtag_uart_write
+ .text          0x0000000000009410        0x4 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000000009410                alt_dcache_flush_all
+ .text          0x0000000000009414        0x8 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x000000000000941c        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x000000000000941c        0xc c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000000000000941c                alt_icache_flush_all
+ .text          0x0000000000009428        0x8 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000009428                altera_nios2_gen2_irq_init
+ .text          0x0000000000009430       0x5c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x0000000000009430                alt_icache_flush
+ .text          0x000000000000948c        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+ .text.memcpy   0x000000000000948c       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+                0x000000000000948c                memcpy
+ *(.gnu.warning.*)
+ *(.fini)
+                [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
+                [!provide]                        PROVIDE (etext = ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00000000000094b4                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__init_array_start = ABSOLUTE (.))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__fini_array_start = ABSOLUTE (.))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                [!provide]                        PROVIDE (__CTOR_LIST__ = ABSOLUTE (.))
+ *(.ctors)
+ *(SORT_BY_NAME(.ctors.*))
+                [!provide]                        PROVIDE (__CTOR_END__ = ABSOLUTE (.))
+                [!provide]                        PROVIDE (__DTOR_LIST__ = ABSOLUTE (.))
+ *(.dtors)
+ *(SORT_BY_NAME(.dtors.*))
+                [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
+ *(.jcr)
+                0x00000000000094b4                . = ALIGN (0x4)
+
+.rodata         0x00000000000094b4      0x6cc
+                0x00000000000094b4                PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x00000000000094b4                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.4
+                0x00000000000094b4      0x439 obj/default/memtest_small.o
+ .rodata._puts_r.str1.4
+                0x00000000000098ed        0x2 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ *fill*         0x00000000000098ed        0x3 
+ .rodata._ctype_
+                0x00000000000098f0      0x101 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+                0x00000000000098f0                _ctype_
+ *fill*         0x00000000000099f1        0x3 
+ .rodata._ctype_b
+                0x00000000000099f4      0x180 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+                0x00000000000099f4                _ctype_b
+ .rodata.str1.4
+                0x0000000000009b74        0xa c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x0000000000009b80                . = ALIGN (0x4)
+ *fill*         0x0000000000009b7e        0x2 
+                0x0000000000009b80                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x00000000000094b4                PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+
+.rwdata         0x0000000000009b80      0x160 load address 0x0000000000009ce0
+                0x0000000000009b80                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x0000000000009b80                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000009b80        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000009b80        0x0 obj/default/memtest_small.o
+ .data          0x0000000000009b80        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000009b80       0xe4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .data          0x0000000000009c64        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .data          0x0000000000009c64        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+ .data          0x0000000000009c64        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000009c64        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000009c64        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .data          0x0000000000009c64        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000000000009c64        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x0000000000009c64        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000000000009c64        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0000000000009c64       0x58 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000009c64                alt_fd_list
+                0x0000000000009c94                alt_dev_null
+ .data          0x0000000000009cbc        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000000000009cbc        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000009cbc        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x0000000000009cbc        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x0000000000009cbc        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+                0x0000000000011cbc                _gp = ABSOLUTE ((. + 0x8000))
+                [!provide]                        PROVIDE (gp = _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata._global_impure_ptr
+                0x0000000000009cbc        0x4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                0x0000000000009cbc                _global_impure_ptr
+ .sdata._impure_ptr
+                0x0000000000009cc0        0x4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                0x0000000000009cc0                _impure_ptr
+ .sdata         0x0000000000009cc4        0x4 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000009cc4                jtag_uart
+ .sdata         0x0000000000009cc8       0x14 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000009cc8                alt_max_fd
+                0x0000000000009ccc                alt_dev_list
+                0x0000000000009cd4                alt_fs_list
+ .sdata         0x0000000000009cdc        0x4 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+                0x0000000000009cdc                alt_errno
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000000000009ce0                . = ALIGN (0x4)
+                0x0000000000009ce0                _edata = ABSOLUTE (.)
+                [!provide]                        PROVIDE (edata = ABSOLUTE (.))
+                0x0000000000009ce0                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x0000000000009ce0                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+
+.bss            0x0000000000009e40       0x10
+                0x0000000000009e40                __bss_start = ABSOLUTE (.)
+                [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss.errno    0x0000000000009e40        0x4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                0x0000000000009e40                errno
+ .sbss          0x0000000000009e44        0xc c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000009e44                alt_envp
+                0x0000000000009e48                alt_argv
+                0x0000000000009e4c                alt_argc
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
+                [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000000000009e50        0x0 obj/default/memtest_small.o
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x0000000000009e50        0x0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x0000000000009e50        0x0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+ *(COMMON)
+                0x0000000000009e50                . = ALIGN (0x4)
+                0x0000000000009e50                __bss_end = ABSOLUTE (.)
+
+.onchip_mem     0x0000000000009e50        0x0
+                [!provide]                        PROVIDE (_alt_partition_onchip_mem_start = ABSOLUTE (.))
+ *(.onchip_mem .onchip_mem. onchip_mem.*)
+                0x0000000000009e50                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_alt_partition_onchip_mem_end = ABSOLUTE (.))
+                0x0000000000009e50                _end = ABSOLUTE (.)
+                0x0000000000009e50                end = ABSOLUTE (.)
+                0x0000000000009e50                __alt_stack_base = ABSOLUTE (.)
+                [!provide]                        PROVIDE (_alt_partition_onchip_mem_load_addr = LOADADDR (.onchip_mem))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2d
+ *(.comment)
+ .comment       0x0000000000000000       0x2d obj/default/memtest_small.o
+                                         0x2e (size before relaxing)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .comment       0x000000000000002d       0x2e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x000000000000002d       0x2e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x3f8
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x0000000000000028       0x28 obj/default/memtest_small.o
+ .debug_aranges
+                0x0000000000000050       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_aranges
+                0x0000000000000068       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_aranges
+                0x0000000000000090       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_aranges
+                0x00000000000000b8       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x0000000000000100       0x38 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .debug_aranges
+                0x0000000000000138       0x30 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_aranges
+                0x0000000000000168       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+ .debug_aranges
+                0x0000000000000180       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .debug_aranges
+                0x00000000000001a0       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_aranges
+                0x00000000000001c0       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_aranges
+                0x00000000000001e8       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_aranges
+                0x0000000000000208       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x0000000000000220       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x0000000000000240       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_aranges
+                0x0000000000000260       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x0000000000000280       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000000000002a0       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_aranges
+                0x00000000000002c0       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000000000002e0       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x0000000000000300       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x0000000000000320       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x0000000000000340       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x0000000000000360       0x18 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x0000000000000378       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x0000000000000398       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_aranges
+                0x00000000000003b8       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x00000000000003d8       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x7cd9
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x22 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000000000000022     0x10a6 obj/default/memtest_small.o
+ .debug_info    0x00000000000010c8      0x61e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_info    0x00000000000016e6      0x72b c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_info    0x0000000000001e11      0x6a5 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_info    0x00000000000024b6      0x6ea c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_info    0x0000000000002ba0       0xd0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000002c70      0xc55 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .debug_info    0x00000000000038c5      0xea3 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_info    0x0000000000004768       0xec c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+ .debug_info    0x0000000000004854      0x608 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .debug_info    0x0000000000004e5c      0x6b3 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_info    0x000000000000550f      0x6f5 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_info    0x0000000000005c04      0x6b3 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_info    0x00000000000062b7       0x84 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x000000000000633b      0x368 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .debug_info    0x00000000000066a3      0x32b c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_info    0x00000000000069ce      0x267 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000006c35      0x129 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000006d5e      0x19b c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_info    0x0000000000006ef9      0x12a c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000007023      0x173 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x0000000000007196      0x14a c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00000000000072e0       0x8c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000000000000736c      0x57a c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x00000000000078e6       0x9d c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000000000007983       0xb3 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000000000007a36       0x8c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000000000007ac2       0xef c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x0000000000007bb1      0x128 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_abbrev   0x0000000000000000     0x2536
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x12 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x0000000000000012      0x36f obj/default/memtest_small.o
+ .debug_abbrev  0x0000000000000381      0x17a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x00000000000004fb      0x216 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_abbrev  0x0000000000000711      0x1f5 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_abbrev  0x0000000000000906      0x20b c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_abbrev  0x0000000000000b11       0x8d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x0000000000000b9e      0x2dc c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .debug_abbrev  0x0000000000000e7a      0x2f7 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_abbrev  0x0000000000001171       0x73 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+ .debug_abbrev  0x00000000000011e4      0x180 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .debug_abbrev  0x0000000000001364      0x1ed c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_abbrev  0x0000000000001551      0x1ef c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_abbrev  0x0000000000001740      0x1d9 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_abbrev  0x0000000000001919       0x39 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x0000000000001952      0x103 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x0000000000001a55      0x12f c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_abbrev  0x0000000000001b84      0x125 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000000000001ca9       0xba c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000001d63      0x12b c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_abbrev  0x0000000000001e8e      0x10b c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000000000001f99       0xea c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x0000000000002083       0xea c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x000000000000216d       0x44 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000000000021b1      0x117 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x00000000000022c8       0x5a c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000000000002322       0x73 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000000000002395       0x44 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x00000000000023d9       0x9f c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x0000000000002478       0xbe c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_line     0x0000000000000000     0x3527
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0x6c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x000000000000006c      0x67a obj/default/memtest_small.o
+ .debug_line    0x00000000000006e6      0x15a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_line    0x0000000000000840      0x249 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_line    0x0000000000000a89      0x213 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_line    0x0000000000000c9c      0x23d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_line    0x0000000000000ed9      0x17a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x0000000000001053      0x48e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .debug_line    0x00000000000014e1      0x736 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_line    0x0000000000001c17       0xd5 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+ .debug_line    0x0000000000001cec      0x17c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .debug_line    0x0000000000001e68      0x250 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_line    0x00000000000020b8      0x259 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_line    0x0000000000002311      0x223 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_line    0x0000000000002534       0x5e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x0000000000002592      0x303 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .debug_line    0x0000000000002895       0xdd c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_line    0x0000000000002972      0x101 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000002a73       0xe0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000002b53      0x182 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_line    0x0000000000002cd5       0xe7 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000002dbc      0x11d c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000000000002ed9       0xd6 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x0000000000002faf       0x53 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000003002      0x1a0 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00000000000031a2       0x51 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000000000031f3       0x77 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000000000000326a       0x5a c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x00000000000032c4       0xd9 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x000000000000339d      0x18a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_frame    0x0000000000000000      0x584
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x74 obj/default/memtest_small.o
+ .debug_frame   0x0000000000000074       0x48 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_frame   0x00000000000000bc       0x30 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_frame   0x00000000000000ec       0x48 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_frame   0x0000000000000134       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000000154       0x84 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .debug_frame   0x00000000000001d8       0x90 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_frame   0x0000000000000268       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .debug_frame   0x0000000000000288       0x3c c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_frame   0x00000000000002c4       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_frame   0x0000000000000314       0x30 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_frame   0x0000000000000344       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x0000000000000394       0x30 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+ .debug_frame   0x00000000000003c4       0x2c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000000000003f0       0x2c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000000000000041c       0x2c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_frame   0x0000000000000448       0x3c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x0000000000000484       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x00000000000004a4       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x00000000000004c4       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000000000004e4       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000000000000504       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000000000000524       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_frame   0x0000000000000544       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x0000000000000564       0x20 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_str      0x0000000000000000     0x1818
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x68 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+ .debug_str     0x0000000000000068      0x59f obj/default/memtest_small.o
+                                        0x67d (size before relaxing)
+ .debug_str     0x0000000000000607      0x188 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                                        0x4ae (size before relaxing)
+ .debug_str     0x000000000000078f      0x11b c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+                                        0x4f4 (size before relaxing)
+ .debug_str     0x00000000000008aa       0x4f c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+                                        0x4b1 (size before relaxing)
+ .debug_str     0x00000000000008f9       0x5d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                                        0x4bd (size before relaxing)
+ .debug_str     0x0000000000000956       0xc7 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                                        0x1c2 (size before relaxing)
+ .debug_str     0x0000000000000a1d      0x2a1 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+                                        0x71d (size before relaxing)
+ .debug_str     0x0000000000000cbe      0x181 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+                                        0x84e (size before relaxing)
+ .debug_str     0x0000000000000e3f       0xce c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-ctype_.o)
+                                        0x1bd (size before relaxing)
+ .debug_str     0x0000000000000f0d       0xc4 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+                                        0x496 (size before relaxing)
+ .debug_str     0x0000000000000fd1       0x62 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                                        0x4c4 (size before relaxing)
+ .debug_str     0x0000000000001033       0x45 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+                                        0x4bb (size before relaxing)
+ .debug_str     0x0000000000001078       0x44 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+                                        0x4a8 (size before relaxing)
+ .debug_str     0x00000000000010bc       0x3e c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                                        0x1b5 (size before relaxing)
+ .debug_str     0x00000000000010fa      0x167 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+                                        0x1c6 (size before relaxing)
+ .debug_str     0x0000000000001261       0xd4 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_getchar.o)
+                                        0x237 (size before relaxing)
+ .debug_str     0x0000000000001335      0x12c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+                                        0x262 (size before relaxing)
+ .debug_str     0x0000000000001461       0x5e c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_main.o)
+                                        0x192 (size before relaxing)
+ .debug_str     0x00000000000014bf       0x4a c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+                                        0x1bb (size before relaxing)
+ .debug_str     0x0000000000001509       0x66 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                        0x1de (size before relaxing)
+ .debug_str     0x000000000000156f       0x32 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                        0x1d9 (size before relaxing)
+ .debug_str     0x00000000000015a1       0x2c c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                        0x1cf (size before relaxing)
+ .debug_str     0x00000000000015cd       0x1f c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                        0x163 (size before relaxing)
+ .debug_str     0x00000000000015ec      0x15d c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_dev.o)
+                                        0x372 (size before relaxing)
+ .debug_str     0x0000000000001749       0x14 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_errno.o)
+                                        0x14d (size before relaxing)
+ .debug_str     0x000000000000175d       0x30 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                        0x174 (size before relaxing)
+ .debug_str     0x000000000000178d       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                                        0x16a (size before relaxing)
+ .debug_str     0x00000000000017ad       0x1b c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                                        0x169 (size before relaxing)
+ .debug_str     0x00000000000017c8       0x50 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+                                        0x1d0 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x28dd
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x787 obj/default/memtest_small.o
+ .debug_loc     0x0000000000000787       0xe1 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_loc     0x0000000000000868       0x91 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_loc     0x00000000000008f9       0xab c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_loc     0x00000000000009a4       0x44 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x00000000000009e8      0x6ca c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .debug_loc     0x00000000000010b2      0xb0d c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_loc     0x0000000000001bbf      0x123 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_loc     0x0000000000001ce2       0xe0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_loc     0x0000000000001dc2       0xd0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_loc     0x0000000000001e92      0x5d0 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x0000000000002462       0xd2 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_loc     0x0000000000002534       0x25 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x0000000000002559      0x130 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x0000000000002689       0x93 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x000000000000271c       0x97 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_loc     0x00000000000027b3      0x12a c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x0000000000000000       0x20
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x0000000000000000       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+                0x000000000000d000                __alt_data_end = 0xd000
+                0x000000000000d000                PROVIDE (__alt_stack_pointer = __alt_data_end)
+                [!provide]                        PROVIDE (__alt_stack_limit = __alt_stack_base)
+                [!provide]                        PROVIDE (__alt_heap_start = end)
+                [!provide]                        PROVIDE (__alt_heap_limit = 0xd000)
+OUTPUT(mem_test_small.elf elf32-littlenios2)
+LOAD linker stubs
+
+.debug_ranges   0x0000000000000000      0x3c8
+ .debug_ranges  0x0000000000000000       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x0000000000000020       0xe8 obj/default/memtest_small.o
+ .debug_ranges  0x0000000000000108       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_ranges  0x0000000000000120       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_ranges  0x0000000000000138       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_ranges  0x0000000000000150       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_ranges  0x0000000000000160       0x28 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strtol.o)
+ .debug_ranges  0x0000000000000188       0xf8 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_ranges  0x0000000000000280       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-errno.o)
+ .debug_ranges  0x0000000000000290       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_ranges  0x00000000000002a0       0x18 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_ranges  0x00000000000002b8       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_ranges  0x00000000000002c8       0x70 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1\libgcc.a(lib2-divmod.o)
+ .debug_ranges  0x0000000000000338       0x30 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_ranges  0x0000000000000368       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_ranges  0x0000000000000388       0x20 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x00000000000003a8       0x10 c:/Users/dlerner/Documents/FPGA/EC544_Project/software/mem_test_small_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_ranges  0x00000000000003b8       0x10 c:/intelfpga_lite/20.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
