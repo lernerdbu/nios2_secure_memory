@@ -1,14 +1,10 @@
 module secure_memory_xor(clk,
-						 reset,
-						 clk_en,
 						 datain,
 						 dataout);
  
   parameter xor_key = 32'h95DA4EAB;
 
   input  clk;
-  input  reset;
-  input  clk_en;
   input  [31:0] datain;
   output reg [31:0] dataout;
 
@@ -16,13 +12,8 @@ module secure_memory_xor(clk,
   
   assign new_data = datain ^ xor_key;
   
-  always @(posedge clk or posedge reset) begin
-    if (reset == 1) begin
-	  dataout <= 32'h0;
-	end
-	else begin
-	  dataout <= new_data;
-	end
+  always @(posedge clk) begin
+	dataout <= new_data;
   end
   
 endmodule

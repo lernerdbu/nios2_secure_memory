@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu' in SOPC Builder design 'nios2_secure_memory'
 # SOPC Builder design path: c:/Users/dlerner/Documents/FPGA/EC544_Project/nios2_secure_memory.sopcinfo
 #
-# Generated: Sun Apr 18 20:10:59 EDT 2021
+# Generated: Mon Apr 19 22:14:02 EDT 2021
 
 # DO NOT MODIFY THIS FILE
 #

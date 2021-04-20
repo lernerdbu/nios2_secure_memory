@@ -2,7 +2,7 @@ set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memor
 set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_TOOL_VERSION "20.1"
 set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "nios2_secure_memory" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../nios2_secure_memory.sopcinfo"]
-set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name SLD_INFO "QSYS_NAME nios2_secure_memory HAS_SOPCINFO 1 GENERATION_ID 1618790858"
+set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name SLD_INFO "QSYS_NAME nios2_secure_memory HAS_SOPCINFO 1 GENERATION_ID 1618884573"
 set_global_assignment -library "nios2_secure_memory" -name MISC_FILE [file join $::quartus(qip_path) "../nios2_secure_memory.cmp"]
 set_global_assignment -library "nios2_secure_memory" -name SLD_FILE [file join $::quartus(qip_path) "nios2_secure_memory.regmap"]
 set_global_assignment -library "nios2_secure_memory" -name SLD_FILE [file join $::quartus(qip_path) "nios2_secure_memory.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memor
 set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYxODc5MDg1OA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTYxODg4NDU3Mw==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBJViBF::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::RVA0Q0UyMkYxN0M2::QXV0byBERVZJQ0U="
 set_global_assignment -entity "nios2_secure_memory" -library "nios2_secure_memory" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Ng==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="

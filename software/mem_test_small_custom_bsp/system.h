@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'nios2_secure_memory'
  * SOPC Builder design path: c:/Users/dlerner/Documents/FPGA/EC544_Project/nios2_secure_memory.sopcinfo
  *
- * Generated: Sun Apr 18 20:10:59 EDT 2021
+ * Generated: Mon Apr 19 22:14:02 EDT 2021
  */
 
 /*
@@ -315,7 +315,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1618790858
+#define SYSID_TIMESTAMP 1618884573
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */
