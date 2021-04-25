@@ -1,14 +1,14 @@
-Fitter Status : Successful - Mon Apr 19 22:11:41 2021
+Fitter Status : Successful - Sat Apr 24 19:36:53 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : nio2_secure_memory
 Top-level Entity Name : nio2_secure_memory
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 2,923 / 22,320 ( 13 % )
-    Total combinational functions : 2,614 / 22,320 ( 12 % )
-    Dedicated logic registers : 1,774 / 22,320 ( 8 % )
-Total registers : 1774
+Total logic elements : 3,142 / 22,320 ( 14 % )
+    Total combinational functions : 2,758 / 22,320 ( 12 % )
+    Dedicated logic registers : 1,887 / 22,320 ( 8 % )
+Total registers : 1887
 Total pins : 9 / 154 ( 6 % )
 Total virtual pins : 0
 Total memory bits : 192,384 / 608,256 ( 32 % )

@@ -5,11 +5,11 @@
  version="1.0"
  fabric="QSYS">
  <!-- Format version 20.1 720 (Future versions may contain additional information.) -->
- <!-- 2021.04.19.22:09:33 -->
+ <!-- 2021.04.24.19:34:51 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1618884573</value>
+  <value>1619307291</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -2207,7 +2207,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="customInstSlavesSystemInfo">
    <type>java.lang.String</type>
-   <value><![CDATA[<info><slave name="custom_secure_mem_instructions" baseAddress="0" addressSpan="8" clockCycleType="COMBINATORIAL" /></info>]]></value>
+   <value><![CDATA[<info><slave name="custom_secure_mem_instructions" baseAddress="0" addressSpan="8" clockCycleType="VARIABLE" /></info>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3693,76 +3693,100 @@ parameters are a RESULT of the module parameters. -->
    <type>nios_custom_instruction</type>
    <isStart>true</isStart>
    <port>
-    <name>E_ci_combo_result</name>
+    <name>A_ci_multi_done</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>done</role>
+   </port>
+   <port>
+    <name>A_ci_multi_result</name>
     <direction>Input</direction>
     <width>32</width>
-    <role>result</role>
+    <role>multi_result</role>
    </port>
    <port>
-    <name>E_ci_combo_a</name>
+    <name>A_ci_multi_a</name>
     <direction>Output</direction>
     <width>5</width>
-    <role>a</role>
+    <role>multi_a</role>
    </port>
    <port>
-    <name>E_ci_combo_b</name>
+    <name>A_ci_multi_b</name>
     <direction>Output</direction>
     <width>5</width>
-    <role>b</role>
+    <role>multi_b</role>
    </port>
    <port>
-    <name>E_ci_combo_c</name>
+    <name>A_ci_multi_c</name>
     <direction>Output</direction>
     <width>5</width>
-    <role>c</role>
+    <role>multi_c</role>
    </port>
    <port>
-    <name>E_ci_combo_dataa</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>dataa</role>
-   </port>
-   <port>
-    <name>E_ci_combo_datab</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>datab</role>
-   </port>
-   <port>
-    <name>E_ci_combo_estatus</name>
+    <name>A_ci_multi_clk_en</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>estatus</role>
+    <role>clk_en</role>
    </port>
    <port>
-    <name>E_ci_combo_ipending</name>
+    <name>A_ci_multi_clock</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>A_ci_multi_reset</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+   <port>
+    <name>A_ci_multi_reset_req</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset_req</role>
+   </port>
+   <port>
+    <name>A_ci_multi_dataa</name>
     <direction>Output</direction>
     <width>32</width>
-    <role>ipending</role>
+    <role>multi_dataa</role>
    </port>
    <port>
-    <name>E_ci_combo_n</name>
+    <name>A_ci_multi_datab</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>multi_datab</role>
+   </port>
+   <port>
+    <name>A_ci_multi_n</name>
     <direction>Output</direction>
     <width>8</width>
-    <role>n</role>
+    <role>multi_n</role>
    </port>
    <port>
-    <name>E_ci_combo_readra</name>
+    <name>A_ci_multi_readra</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>readra</role>
+    <role>multi_readra</role>
    </port>
    <port>
-    <name>E_ci_combo_readrb</name>
+    <name>A_ci_multi_readrb</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>readrb</role>
+    <role>multi_readrb</role>
    </port>
    <port>
-    <name>E_ci_combo_writerc</name>
+    <name>A_ci_multi_start</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>writerc</role>
+    <role>start</role>
+   </port>
+   <port>
+    <name>A_ci_multi_writerc</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>multi_writerc</role>
    </port>
    <customInstruction>
     <isBridge>false</isBridge>
@@ -3838,7 +3862,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockCycleType">
     <type>com.altera.sopcmodel.custominstruction.CustomInstruction$ClockCycleType</type>
-    <value>COMBINATORIAL</value>
+    <value>VARIABLE</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -3935,6 +3959,18 @@ parameters are a RESULT of the module parameters. -->
     <direction>Output</direction>
     <width>32</width>
     <role>result</role>
+   </port>
+   <port>
+    <name>clk</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>reset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset</role>
    </port>
   </interface>
   <interface name="avalon_master" kind="avalon_master" version="20.1">
@@ -4127,7 +4163,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="readLatency">
     <type>int</type>
-    <value>0</value>
+    <value>1</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -4208,7 +4244,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>address</name>
     <direction>Output</direction>
-    <width>32</width>
+    <width>16</width>
     <role>address</role>
    </port>
    <port>
@@ -4289,7 +4325,7 @@ parameters are a RESULT of the module parameters. -->
    <type>clock</type>
    <isStart>false</isStart>
    <port>
-    <name>clk</name>
+    <name>clk_sink</name>
     <direction>Input</direction>
     <width>1</width>
     <role>clk</role>
@@ -4334,7 +4370,7 @@ parameters are a RESULT of the module parameters. -->
    <type>reset</type>
    <isStart>false</isStart>
    <port>
-    <name>reset</name>
+    <name>reset_sink</name>
     <direction>Input</direction>
     <width>1</width>
     <role>reset</role>
@@ -7998,7 +8034,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1618884573</value>
+   <value>1619307291</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -8018,7 +8054,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1618884573</value>
+   <value>1619307291</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -8034,7 +8070,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1618884573</value>
+   <value>1619307291</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>

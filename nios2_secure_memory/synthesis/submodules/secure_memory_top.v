@@ -7,6 +7,8 @@ module secure_memory_top(clk,
 						 start,
 						 done,
 						 result,
+						 clk_sink,
+						 reset_sink,
 						 write,
 						 readdata,
 						 waitrequest,
@@ -25,56 +27,47 @@ module secure_memory_top(clk,
   input   [2:0] n;
   input         clk_en;
   input         start;
+  input         clk_sink;
+  input         reset_sink;
   output        done;
   output [31:0] result;
   
   // Avalon Memory Interface
-  input  [31:0]     readdata;
+  input      [31:0] readdata;
   input             waitrequest;
-  output reg [31:0] address;
-  output reg [3:0]  byteenable;
+  output reg [15:0] address;
+  output reg  [3:0] byteenable;
   output reg        chipselect;
   output reg        write;
   output reg [31:0] writedata;
 
-  wire [31:0] datain;
-  wire [31:0] dataout;
-  wire        active1, active2;
-  
-  reg [31:0] dataa_delay, dataa_delay2;
-  reg [31:0] datab_delay, datab_delay2;
-  reg  [2:0] n_delay, n_delay2;
-  reg        clk_en_delay, clk_en_delay2;
-  reg        start_delay, start_delay2, start_delay3;
+  reg start_delay, start_delay2;
 
-  assign active1 = start_delay & clk_en_delay;
-  assign active2 = start_delay2 & clk_en_delay2;
-  
-  // Decrypt after 2nd cycle for reads, after 1st cycle for writes
-  assign datain  = ((n_delay > 0) & active1) ? dataa_delay : 
-                   (((n_delay2 == 0) & active2) ? readdata : xor_key);
-  // Reads take 3 cycles, writes take 2
-  assign done    = ((n_delay2 > 0) & active2) ? start_delay2 : start_delay3;
+  wire [31:0] datain, dataout;
+
+  // Reads take 2 cycles, writes take 1
+  assign done    = (n == 0) ? start_delay2 : start_delay;
   assign result  = dataout;
 
+  assign datain  = (n == 0) ? readdata : dataa;
 
   // Assign memory interface signals
   always @(*) begin
-    //Reads go to mem first, then xor
-    if ((n_delay == 0) & active1) begin 
-      address    = datab_delay;
+    // Writes get XOR first, then go to memory
+	if ((n > 0) & start_delay) begin 
+	  address    = (datab[15:0] - 16'h8000) >> 2; // Byte aligned addr
       byteenable = 4'b1111;
-      chipselect = start_delay;
-      write      = 1'b0;
-      writedata  = 32'h0;
-	end  
-	// Writes go to xor, them mem
-	else if ((n_delay2 > 0) & active2) begin 
-	  address    = datab_delay2;
-      byteenable = 4'b1111;
-      chipselect = start_delay2;
+      chipselect = 1'b1;
       write      = 1'b1;
       writedata  = dataout;
+	end
+	// Reads go to memory first, then XOR
+	else if ((n == 0) & start) begin
+	  address    = (datab[15:0] - 16'h8000) >> 2; // Byte aligned addr
+      byteenable = 4'b1111;
+      chipselect = 1'b1;
+      write      = 1'b0;
+      writedata  = 32'h0;
 	end
 	// Zero out when interface is idle
 	else begin
@@ -87,36 +80,14 @@ module secure_memory_top(clk,
   end
   
   // Flop instruction controls
-  always @(posedge clk or negedge reset) begin
-    if (reset == 0) begin
-      dataa_delay   <= 32'h0;
-	  datab_delay   <= 32'h0;
-	  n_delay       <= 3'h0;
-	  clk_en_delay  <= 1'b0;
+  always @(posedge clk or posedge reset) begin
+    if (reset == 1) begin
 	  start_delay   <= 1'b0;
-	  
-      dataa_delay2  <= 32'h0;
-	  datab_delay2  <= 32'h0;
-	  n_delay2      <= 3'h0;
-	  clk_en_delay2 <= 1'b0;
-	  start_delay2  <= 1'b0;
-	  
-	  start_delay3  <= 1'b0;	
+      start_delay2  <= 1'b0;  
 	end
 	else begin
-      dataa_delay   <= dataa;
-	  datab_delay   <= datab;
-	  n_delay       <= n;
-	  clk_en_delay  <= clk_en;
 	  start_delay   <= start;
-	  
-      dataa_delay2  <= dataa_delay;
-	  datab_delay2  <= datab_delay;
-	  n_delay2      <= n_delay;
-	  clk_en_delay2 <= clk_en_delay;
 	  start_delay2  <= start_delay;
-	  
-	  start_delay3  <= start_delay2 & active2 & (n_delay2 == 0);
 	end
   end
   

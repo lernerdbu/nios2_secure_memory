@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="nios2_secure_memory" kind="system" version="20.1" fabric="QSYS">
  <!-- Format version 20.1 720 (Future versions may contain additional information.) -->
- <!-- 2021.04.19.22:10:06 -->
+ <!-- 2021.04.24.19:35:26 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1618884573</value>
+  <value>1619307291</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -2297,7 +2297,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="customInstSlavesSystemInfo">
    <type>java.lang.String</type>
-   <value><![CDATA[<info><slave name="custom_secure_mem_instructions" baseAddress="0" addressSpan="8" clockCycleType="COMBINATORIAL" /></info>]]></value>
+   <value><![CDATA[<info><slave name="custom_secure_mem_instructions" baseAddress="0" addressSpan="8" clockCycleType="VARIABLE" /></info>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3728,76 +3728,100 @@ parameters are a RESULT of the module parameters. -->
    <type>nios_custom_instruction</type>
    <isStart>true</isStart>
    <port>
-    <name>E_ci_combo_result</name>
+    <name>A_ci_multi_done</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>done</role>
+   </port>
+   <port>
+    <name>A_ci_multi_result</name>
     <direction>Input</direction>
     <width>32</width>
-    <role>result</role>
+    <role>multi_result</role>
    </port>
    <port>
-    <name>E_ci_combo_a</name>
+    <name>A_ci_multi_a</name>
     <direction>Output</direction>
     <width>5</width>
-    <role>a</role>
+    <role>multi_a</role>
    </port>
    <port>
-    <name>E_ci_combo_b</name>
+    <name>A_ci_multi_b</name>
     <direction>Output</direction>
     <width>5</width>
-    <role>b</role>
+    <role>multi_b</role>
    </port>
    <port>
-    <name>E_ci_combo_c</name>
+    <name>A_ci_multi_c</name>
     <direction>Output</direction>
     <width>5</width>
-    <role>c</role>
+    <role>multi_c</role>
    </port>
    <port>
-    <name>E_ci_combo_dataa</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>dataa</role>
-   </port>
-   <port>
-    <name>E_ci_combo_datab</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>datab</role>
-   </port>
-   <port>
-    <name>E_ci_combo_estatus</name>
+    <name>A_ci_multi_clk_en</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>estatus</role>
+    <role>clk_en</role>
    </port>
    <port>
-    <name>E_ci_combo_ipending</name>
+    <name>A_ci_multi_clock</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>A_ci_multi_reset</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+   <port>
+    <name>A_ci_multi_reset_req</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset_req</role>
+   </port>
+   <port>
+    <name>A_ci_multi_dataa</name>
     <direction>Output</direction>
     <width>32</width>
-    <role>ipending</role>
+    <role>multi_dataa</role>
    </port>
    <port>
-    <name>E_ci_combo_n</name>
+    <name>A_ci_multi_datab</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>multi_datab</role>
+   </port>
+   <port>
+    <name>A_ci_multi_n</name>
     <direction>Output</direction>
     <width>8</width>
-    <role>n</role>
+    <role>multi_n</role>
    </port>
    <port>
-    <name>E_ci_combo_readra</name>
+    <name>A_ci_multi_readra</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>readra</role>
+    <role>multi_readra</role>
    </port>
    <port>
-    <name>E_ci_combo_readrb</name>
+    <name>A_ci_multi_readrb</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>readrb</role>
+    <role>multi_readrb</role>
    </port>
    <port>
-    <name>E_ci_combo_writerc</name>
+    <name>A_ci_multi_start</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>writerc</role>
+    <role>start</role>
+   </port>
+   <port>
+    <name>A_ci_multi_writerc</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>multi_writerc</role>
    </port>
    <customInstruction>
     <isBridge>false</isBridge>
@@ -3873,7 +3897,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockCycleType">
     <type>com.altera.sopcmodel.custominstruction.CustomInstruction$ClockCycleType</type>
-    <value>COMBINATORIAL</value>
+    <value>VARIABLE</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -3970,6 +3994,18 @@ parameters are a RESULT of the module parameters. -->
     <direction>Output</direction>
     <width>32</width>
     <role>result</role>
+   </port>
+   <port>
+    <name>clk</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>reset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset</role>
    </port>
   </interface>
   <interface name="avalon_master" kind="avalon_master" version="20.1">
@@ -4162,7 +4198,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="readLatency">
     <type>int</type>
-    <value>0</value>
+    <value>1</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -4243,7 +4279,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>address</name>
     <direction>Output</direction>
-    <width>32</width>
+    <width>16</width>
     <role>address</role>
    </port>
    <port>
@@ -4282,7 +4318,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>custom_secure_mem_instructions_avalon_master</slaveName>
     <name>mm_interconnect_0.custom_secure_mem_instructions_avalon_master</name>
     <baseAddress>0</baseAddress>
-    <span>17179869184</span>
+    <span>262144</span>
    </memoryBlock>
   </interface>
   <interface name="clock_sink" kind="clock_sink" version="20.1">
@@ -4324,7 +4360,7 @@ parameters are a RESULT of the module parameters. -->
    <type>clock</type>
    <isStart>false</isStart>
    <port>
-    <name>clk</name>
+    <name>clk_sink</name>
     <direction>Input</direction>
     <width>1</width>
     <role>clk</role>
@@ -4369,7 +4405,7 @@ parameters are a RESULT of the module parameters. -->
    <type>reset</type>
    <isStart>false</isStart>
    <port>
-    <name>reset</name>
+    <name>reset_sink</name>
     <direction>Input</direction>
     <width>1</width>
     <role>reset</role>
@@ -8033,7 +8069,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1618884573</value>
+   <value>1619307291</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -8053,7 +8089,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1618884573</value>
+   <value>1619307291</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -8069,7 +8105,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1618884573</value>
+   <value>1619307291</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -8535,7 +8571,7 @@ parameters are a RESULT of the module parameters. -->
 the requested settings for a module instance. -->
   <parameter name="USE_DATAA">
    <type>int</type>
-   <value>1</value>
+   <value>0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8543,7 +8579,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_DATAB">
    <type>int</type>
-   <value>1</value>
+   <value>0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8551,7 +8587,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_N">
    <type>int</type>
-   <value>1</value>
+   <value>0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8559,7 +8595,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_READRA">
    <type>int</type>
-   <value>1</value>
+   <value>0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8567,7 +8603,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_READRB">
    <type>int</type>
-   <value>1</value>
+   <value>0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8575,7 +8611,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_WRITERC">
    <type>int</type>
-   <value>1</value>
+   <value>0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8583,7 +8619,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_IPENDING">
    <type>int</type>
-   <value>1</value>
+   <value>0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8591,7 +8627,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_ESTATUS">
    <type>int</type>
-   <value>1</value>
+   <value>0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8599,7 +8635,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="ENABLE_MULTICYCLE">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8607,7 +8643,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_START">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8615,7 +8651,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_DONE">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8623,7 +8659,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_MULTI_DATAA">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8631,7 +8667,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_MULTI_DATAB">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8639,7 +8675,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_MULTI_RESULT">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8647,7 +8683,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_MULTI_N">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8655,7 +8691,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_MULTI_READRA">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8663,7 +8699,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_MULTI_READRB">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8671,7 +8707,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="USE_MULTI_WRITERC">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -8715,7 +8751,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="NPort">
     <type>int</type>
-    <value>8</value>
+    <value>0</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -8731,7 +8767,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockCycleType">
     <type>com.altera.sopcmodel.custominstruction.CustomInstruction$ClockCycleType</type>
-    <value>COMBINATORIAL</value>
+    <value>VARIABLE</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -8788,76 +8824,106 @@ parameters are a RESULT of the module parameters. -->
    <type>nios_custom_instruction</type>
    <isStart>false</isStart>
    <port>
-    <name>ci_slave_dataa</name>
-    <direction>Input</direction>
-    <width>32</width>
-    <role>dataa</role>
-   </port>
-   <port>
-    <name>ci_slave_datab</name>
-    <direction>Input</direction>
-    <width>32</width>
-    <role>datab</role>
-   </port>
-   <port>
     <name>ci_slave_result</name>
     <direction>Output</direction>
     <width>32</width>
     <role>result</role>
    </port>
    <port>
-    <name>ci_slave_n</name>
-    <direction>Input</direction>
-    <width>8</width>
-    <role>n</role>
-   </port>
-   <port>
-    <name>ci_slave_readra</name>
+    <name>ci_slave_multi_clk</name>
     <direction>Input</direction>
     <width>1</width>
-    <role>readra</role>
+    <role>clk</role>
    </port>
    <port>
-    <name>ci_slave_readrb</name>
+    <name>ci_slave_multi_reset</name>
     <direction>Input</direction>
     <width>1</width>
-    <role>readrb</role>
+    <role>reset</role>
    </port>
    <port>
-    <name>ci_slave_writerc</name>
+    <name>ci_slave_multi_clken</name>
     <direction>Input</direction>
     <width>1</width>
-    <role>writerc</role>
+    <role>clk_en</role>
    </port>
    <port>
-    <name>ci_slave_a</name>
+    <name>ci_slave_multi_reset_req</name>
     <direction>Input</direction>
-    <width>5</width>
-    <role>a</role>
+    <width>1</width>
+    <role>reset_req</role>
    </port>
    <port>
-    <name>ci_slave_b</name>
+    <name>ci_slave_multi_start</name>
     <direction>Input</direction>
-    <width>5</width>
-    <role>b</role>
+    <width>1</width>
+    <role>start</role>
    </port>
    <port>
-    <name>ci_slave_c</name>
-    <direction>Input</direction>
-    <width>5</width>
-    <role>c</role>
+    <name>ci_slave_multi_done</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>done</role>
    </port>
    <port>
-    <name>ci_slave_ipending</name>
+    <name>ci_slave_multi_dataa</name>
     <direction>Input</direction>
     <width>32</width>
-    <role>ipending</role>
+    <role>multi_dataa</role>
    </port>
    <port>
-    <name>ci_slave_estatus</name>
+    <name>ci_slave_multi_datab</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>multi_datab</role>
+   </port>
+   <port>
+    <name>ci_slave_multi_result</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>multi_result</role>
+   </port>
+   <port>
+    <name>ci_slave_multi_n</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>multi_n</role>
+   </port>
+   <port>
+    <name>ci_slave_multi_readra</name>
     <direction>Input</direction>
     <width>1</width>
-    <role>estatus</role>
+    <role>multi_readra</role>
+   </port>
+   <port>
+    <name>ci_slave_multi_readrb</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>multi_readrb</role>
+   </port>
+   <port>
+    <name>ci_slave_multi_writerc</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>multi_writerc</role>
+   </port>
+   <port>
+    <name>ci_slave_multi_a</name>
+    <direction>Input</direction>
+    <width>5</width>
+    <role>multi_a</role>
+   </port>
+   <port>
+    <name>ci_slave_multi_b</name>
+    <direction>Input</direction>
+    <width>5</width>
+    <role>multi_b</role>
+   </port>
+   <port>
+    <name>ci_slave_multi_c</name>
+    <direction>Input</direction>
+    <width>5</width>
+    <role>multi_c</role>
    </port>
   </interface>
   <interface
@@ -8942,92 +9008,204 @@ parameters are a RESULT of the module parameters. -->
    <type>nios_custom_instruction</type>
    <isStart>true</isStart>
    <port>
-    <name>comb_ci_master_dataa</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>dataa</role>
-   </port>
-   <port>
-    <name>comb_ci_master_datab</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>datab</role>
-   </port>
-   <port>
     <name>comb_ci_master_result</name>
     <direction>Input</direction>
     <width>32</width>
     <role>result</role>
    </port>
+  </interface>
+  <interface
+     name="multi_ci_master"
+     kind="nios_custom_instruction_master"
+     version="20.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="CIName">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>true</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="addressWidth">
+    <type>int</type>
+    <value>8</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="clockCycle">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="enabled">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maxAddressWidth">
+    <type>int</type>
+    <value>8</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="opcodeExtension">
+    <type>int</type>
+    <value>0</value>
+    <derived>true</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="sharedCombinationalAndMulticycle">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>nios_custom_instruction</type>
+   <isStart>true</isStart>
    <port>
-    <name>comb_ci_master_n</name>
+    <name>multi_ci_master_clk</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>multi_ci_master_reset</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+   <port>
+    <name>multi_ci_master_clken</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk_en</role>
+   </port>
+   <port>
+    <name>multi_ci_master_reset_req</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset_req</role>
+   </port>
+   <port>
+    <name>multi_ci_master_start</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>start</role>
+   </port>
+   <port>
+    <name>multi_ci_master_done</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>done</role>
+   </port>
+   <port>
+    <name>multi_ci_master_dataa</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>dataa</role>
+   </port>
+   <port>
+    <name>multi_ci_master_datab</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>datab</role>
+   </port>
+   <port>
+    <name>multi_ci_master_result</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>result</role>
+   </port>
+   <port>
+    <name>multi_ci_master_n</name>
     <direction>Output</direction>
     <width>8</width>
     <role>n</role>
    </port>
    <port>
-    <name>comb_ci_master_readra</name>
+    <name>multi_ci_master_readra</name>
     <direction>Output</direction>
     <width>1</width>
     <role>readra</role>
    </port>
    <port>
-    <name>comb_ci_master_readrb</name>
+    <name>multi_ci_master_readrb</name>
     <direction>Output</direction>
     <width>1</width>
     <role>readrb</role>
    </port>
    <port>
-    <name>comb_ci_master_writerc</name>
+    <name>multi_ci_master_writerc</name>
     <direction>Output</direction>
     <width>1</width>
     <role>writerc</role>
    </port>
    <port>
-    <name>comb_ci_master_a</name>
+    <name>multi_ci_master_a</name>
     <direction>Output</direction>
     <width>5</width>
     <role>a</role>
    </port>
    <port>
-    <name>comb_ci_master_b</name>
+    <name>multi_ci_master_b</name>
     <direction>Output</direction>
     <width>5</width>
     <role>b</role>
    </port>
    <port>
-    <name>comb_ci_master_c</name>
+    <name>multi_ci_master_c</name>
     <direction>Output</direction>
     <width>5</width>
     <role>c</role>
    </port>
-   <port>
-    <name>comb_ci_master_ipending</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>ipending</role>
-   </port>
-   <port>
-    <name>comb_ci_master_estatus</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>estatus</role>
-   </port>
    <customInstruction>
     <isBridge>false</isBridge>
-    <moduleName>cpu_custom_instruction_master_comb_xconnect</moduleName>
+    <moduleName>cpu_custom_instruction_master_multi_xconnect</moduleName>
     <slaveName>ci_slave</slaveName>
-    <name>cpu_custom_instruction_master_comb_xconnect.ci_slave</name>
+    <name>cpu_custom_instruction_master_multi_xconnect.ci_slave</name>
     <opcodeNumber>0</opcodeNumber>
     <opcodeMnemonic></opcodeMnemonic>
    </customInstruction>
   </interface>
  </module>
  <module
-   name="cpu_custom_instruction_master_comb_xconnect"
+   name="cpu_custom_instruction_master_multi_xconnect"
    kind="altera_customins_xconnect"
    version="20.1"
-   path="cpu_custom_instruction_master_comb_xconnect">
+   path="cpu_custom_instruction_master_multi_xconnect">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="MASTER_INDEX">
@@ -9056,7 +9234,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="ENABLE_MULTICYCLE">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9108,7 +9286,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockCycleType">
     <type>com.altera.sopcmodel.custominstruction.CustomInstruction$ClockCycleType</type>
-    <value>COMBINATORIAL</value>
+    <value>VARIABLE</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -9235,6 +9413,42 @@ parameters are a RESULT of the module parameters. -->
     <direction>Input</direction>
     <width>1</width>
     <role>estatus</role>
+   </port>
+   <port>
+    <name>ci_slave_clk</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>ci_slave_reset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+   <port>
+    <name>ci_slave_clken</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk_en</role>
+   </port>
+   <port>
+    <name>ci_slave_reset_req</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset_req</role>
+   </port>
+   <port>
+    <name>ci_slave_start</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>start</role>
+   </port>
+   <port>
+    <name>ci_slave_done</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>done</role>
    </port>
   </interface>
   <interface
@@ -9390,21 +9604,57 @@ parameters are a RESULT of the module parameters. -->
     <width>1</width>
     <role>estatus</role>
    </port>
+   <port>
+    <name>ci_master0_clk</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>ci_master0_reset</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+   <port>
+    <name>ci_master0_clken</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk_en</role>
+   </port>
+   <port>
+    <name>ci_master0_reset_req</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset_req</role>
+   </port>
+   <port>
+    <name>ci_master0_start</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>start</role>
+   </port>
+   <port>
+    <name>ci_master0_done</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>done</role>
+   </port>
    <customInstruction>
     <isBridge>false</isBridge>
-    <moduleName>cpu_custom_instruction_master_comb_slave_translator0</moduleName>
+    <moduleName>cpu_custom_instruction_master_multi_slave_translator0</moduleName>
     <slaveName>ci_slave</slaveName>
-    <name>cpu_custom_instruction_master_comb_slave_translator0.ci_slave</name>
+    <name>cpu_custom_instruction_master_multi_slave_translator0.ci_slave</name>
     <opcodeNumber>0</opcodeNumber>
     <opcodeMnemonic></opcodeMnemonic>
    </customInstruction>
   </interface>
  </module>
  <module
-   name="cpu_custom_instruction_master_comb_slave_translator0"
+   name="cpu_custom_instruction_master_multi_slave_translator0"
    kind="altera_customins_slave_translator"
    version="20.1"
-   path="cpu_custom_instruction_master_comb_slave_translator0">
+   path="cpu_custom_instruction_master_multi_slave_translator0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="USE_DATAA">
@@ -9489,7 +9739,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="ENABLE_MULTICYCLE">
    <type>int</type>
-   <value>0</value>
+   <value>1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -9565,7 +9815,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockCycleType">
     <type>com.altera.sopcmodel.custominstruction.CustomInstruction$ClockCycleType</type>
-    <value>COMBINATORIAL</value>
+    <value>VARIABLE</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -9693,6 +9943,42 @@ parameters are a RESULT of the module parameters. -->
     <width>1</width>
     <role>estatus</role>
    </port>
+   <port>
+    <name>ci_slave_clk</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>ci_slave_clken</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk_en</role>
+   </port>
+   <port>
+    <name>ci_slave_reset_req</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset_req</role>
+   </port>
+   <port>
+    <name>ci_slave_reset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+   <port>
+    <name>ci_slave_start</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>start</role>
+   </port>
+   <port>
+    <name>ci_slave_done</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>done</role>
+   </port>
   </interface>
   <interface name="ci_master" kind="nios_custom_instruction_master" version="20.1">
    <!-- The connection points exposed by a module instance for the
@@ -9796,6 +10082,36 @@ parameters are a RESULT of the module parameters. -->
     <width>3</width>
     <role>n</role>
    </port>
+   <port>
+    <name>ci_master_clk</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+   <port>
+    <name>ci_master_clken</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>clk_en</role>
+   </port>
+   <port>
+    <name>ci_master_reset</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+   <port>
+    <name>ci_master_start</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>start</role>
+   </port>
+   <port>
+    <name>ci_master_done</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>done</role>
+   </port>
    <customInstruction>
     <isBridge>false</isBridge>
     <moduleName>custom_secure_mem_instructions</moduleName>
@@ -9823,7 +10139,7 @@ the requested settings for a module instance. -->
   </assignment>
   <parameter name="COMPOSE_CONTENTS">
    <type>java.lang.String</type>
-   <value>add_instance {custom_secure_mem_instructions_avalon_master_translator} {altera_merlin_master_translator};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ADDRESS_W} {32};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_DATA_W} {32};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {UAV_ADDRESS_W} {34};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_READLATENCY} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_READ_WAIT} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_READDATA} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_READ} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_WRITE} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_CHIPSELECT} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_ADDRESS} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_CLKEN} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_WAITREQUEST} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_LOCK} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {64};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {SYNC_RESET} {0};add_instance {onchip_mem_s2_translator} {altera_merlin_slave_translator};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ADDRESS_W} {13};set_instance_parameter_value {onchip_mem_s2_translator} {AV_DATA_W} {32};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_DATA_W} {32};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_BYTEENABLE_W} {4};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_ADDRESS_W} {34};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {onchip_mem_s2_translator} {AV_READLATENCY} {1};set_instance_parameter_value {onchip_mem_s2_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_READ_WAIT} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_TIMING_UNITS} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_READDATA} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_READ} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WRITE} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_CHIPSELECT} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_ADDRESS} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WAITREQUEST} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WRITEBYTEENABLE} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_LOCK} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_AV_CLKEN} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_UAV_CLKEN} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_OUTPUTENABLE} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_REQUIRE_UNALIGNED_ADDRESSES} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {1};set_instance_parameter_value {onchip_mem_s2_translator} {AV_MAX_PENDING_WRITE_TRANSACTIONS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {onchip_mem_s2_translator} {CHIPSELECT_THROUGH_READLATENCY} {0};add_instance {custom_secure_mem_instructions_reset_sink_reset_bridge} {altera_reset_bridge};set_instance_parameter_value {custom_secure_mem_instructions_reset_sink_reset_bridge} {ACTIVE_LOW_RESET} {0};set_instance_parameter_value {custom_secure_mem_instructions_reset_sink_reset_bridge} {SYNCHRONOUS_EDGES} {deassert};set_instance_parameter_value {custom_secure_mem_instructions_reset_sink_reset_bridge} {NUM_RESET_OUTPUTS} {1};set_instance_parameter_value {custom_secure_mem_instructions_reset_sink_reset_bridge} {USE_RESET_REQUEST} {0};add_instance {clk_0_clk_clock_bridge} {altera_clock_bridge};set_instance_parameter_value {clk_0_clk_clock_bridge} {EXPLICIT_CLOCK_RATE} {50000000};set_instance_parameter_value {clk_0_clk_clock_bridge} {NUM_CLOCK_OUTPUTS} {1};add_connection {custom_secure_mem_instructions_avalon_master_translator.avalon_universal_master_0} {onchip_mem_s2_translator.avalon_universal_slave_0} {avalon};set_connection_parameter_value {custom_secure_mem_instructions_avalon_master_translator.avalon_universal_master_0/onchip_mem_s2_translator.avalon_universal_slave_0} {arbitrationPriority} {1};set_connection_parameter_value {custom_secure_mem_instructions_avalon_master_translator.avalon_universal_master_0/onchip_mem_s2_translator.avalon_universal_slave_0} {baseAddress} {0x8000};set_connection_parameter_value {custom_secure_mem_instructions_avalon_master_translator.avalon_universal_master_0/onchip_mem_s2_translator.avalon_universal_slave_0} {defaultConnection} {false};add_connection {custom_secure_mem_instructions_reset_sink_reset_bridge.out_reset} {custom_secure_mem_instructions_avalon_master_translator.reset} {reset};add_connection {custom_secure_mem_instructions_reset_sink_reset_bridge.out_reset} {onchip_mem_s2_translator.reset} {reset};add_connection {clk_0_clk_clock_bridge.out_clk} {custom_secure_mem_instructions_avalon_master_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {onchip_mem_s2_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {custom_secure_mem_instructions_reset_sink_reset_bridge.clk} {clock};add_interface {clk_0_clk} {clock} {slave};set_interface_property {clk_0_clk} {EXPORT_OF} {clk_0_clk_clock_bridge.in_clk};add_interface {custom_secure_mem_instructions_reset_sink_reset_bridge_in_reset} {reset} {slave};set_interface_property {custom_secure_mem_instructions_reset_sink_reset_bridge_in_reset} {EXPORT_OF} {custom_secure_mem_instructions_reset_sink_reset_bridge.in_reset};add_interface {custom_secure_mem_instructions_avalon_master} {avalon} {slave};set_interface_property {custom_secure_mem_instructions_avalon_master} {EXPORT_OF} {custom_secure_mem_instructions_avalon_master_translator.avalon_anti_master_0};add_interface {onchip_mem_s2} {avalon} {master};set_interface_property {onchip_mem_s2} {EXPORT_OF} {onchip_mem_s2_translator.avalon_anti_slave_0};set_module_assignment {interconnect_id.custom_secure_mem_instructions.avalon_master} {0};set_module_assignment {interconnect_id.onchip_mem.s2} {0};</value>
+   <value>add_instance {custom_secure_mem_instructions_avalon_master_translator} {altera_merlin_master_translator};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ADDRESS_W} {16};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_DATA_W} {32};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {UAV_ADDRESS_W} {18};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_READLATENCY} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_READ_WAIT} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_READDATA} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_READ} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_WRITE} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_CHIPSELECT} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_ADDRESS} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_CLKEN} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_WAITREQUEST} {1};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_LOCK} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {64};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {custom_secure_mem_instructions_avalon_master_translator} {SYNC_RESET} {0};add_instance {onchip_mem_s2_translator} {altera_merlin_slave_translator};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ADDRESS_W} {13};set_instance_parameter_value {onchip_mem_s2_translator} {AV_DATA_W} {32};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_DATA_W} {32};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BURSTCOUNT_W} {1};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BYTEENABLE_W} {4};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_BYTEENABLE_W} {4};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_ADDRESS_W} {18};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_BURSTCOUNT_W} {3};set_instance_parameter_value {onchip_mem_s2_translator} {AV_READLATENCY} {1};set_instance_parameter_value {onchip_mem_s2_translator} {AV_SETUP_WAIT} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_WRITE_WAIT} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_READ_WAIT} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_DATA_HOLD} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_TIMING_UNITS} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_READDATA} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WRITEDATA} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_READ} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WRITE} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_BEGINBURSTTRANSFER} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_BEGINTRANSFER} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_BYTEENABLE} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_CHIPSELECT} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_ADDRESS} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_BURSTCOUNT} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_READDATAVALID} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WAITREQUEST} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WRITEBYTEENABLE} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_LOCK} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_AV_CLKEN} {1};set_instance_parameter_value {onchip_mem_s2_translator} {USE_UAV_CLKEN} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_OUTPUTENABLE} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_DEBUGACCESS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_READRESPONSE} {0};set_instance_parameter_value {onchip_mem_s2_translator} {USE_WRITERESPONSE} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_SYMBOLS_PER_WORD} {4};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ADDRESS_SYMBOLS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BURSTCOUNT_SYMBOLS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_CONSTANT_BURST_BEHAVIOR} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_REQUIRE_UNALIGNED_ADDRESSES} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_LINEWRAPBURSTS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_MAX_PENDING_READ_TRANSACTIONS} {1};set_instance_parameter_value {onchip_mem_s2_translator} {AV_MAX_PENDING_WRITE_TRANSACTIONS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BURSTBOUNDARIES} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_INTERLEAVEBURSTS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_BITS_PER_SYMBOL} {8};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ISBIGENDIAN} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ADDRESSGROUP} {0};set_instance_parameter_value {onchip_mem_s2_translator} {UAV_ADDRESSGROUP} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_REGISTEROUTGOINGSIGNALS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_REGISTERINCOMINGSIGNALS} {0};set_instance_parameter_value {onchip_mem_s2_translator} {AV_ALWAYSBURSTMAXBURST} {0};set_instance_parameter_value {onchip_mem_s2_translator} {CHIPSELECT_THROUGH_READLATENCY} {0};add_instance {custom_secure_mem_instructions_reset_sink_reset_bridge} {altera_reset_bridge};set_instance_parameter_value {custom_secure_mem_instructions_reset_sink_reset_bridge} {ACTIVE_LOW_RESET} {0};set_instance_parameter_value {custom_secure_mem_instructions_reset_sink_reset_bridge} {SYNCHRONOUS_EDGES} {deassert};set_instance_parameter_value {custom_secure_mem_instructions_reset_sink_reset_bridge} {NUM_RESET_OUTPUTS} {1};set_instance_parameter_value {custom_secure_mem_instructions_reset_sink_reset_bridge} {USE_RESET_REQUEST} {0};add_instance {clk_0_clk_clock_bridge} {altera_clock_bridge};set_instance_parameter_value {clk_0_clk_clock_bridge} {EXPLICIT_CLOCK_RATE} {50000000};set_instance_parameter_value {clk_0_clk_clock_bridge} {NUM_CLOCK_OUTPUTS} {1};add_connection {custom_secure_mem_instructions_avalon_master_translator.avalon_universal_master_0} {onchip_mem_s2_translator.avalon_universal_slave_0} {avalon};set_connection_parameter_value {custom_secure_mem_instructions_avalon_master_translator.avalon_universal_master_0/onchip_mem_s2_translator.avalon_universal_slave_0} {arbitrationPriority} {1};set_connection_parameter_value {custom_secure_mem_instructions_avalon_master_translator.avalon_universal_master_0/onchip_mem_s2_translator.avalon_universal_slave_0} {baseAddress} {0x8000};set_connection_parameter_value {custom_secure_mem_instructions_avalon_master_translator.avalon_universal_master_0/onchip_mem_s2_translator.avalon_universal_slave_0} {defaultConnection} {false};add_connection {custom_secure_mem_instructions_reset_sink_reset_bridge.out_reset} {custom_secure_mem_instructions_avalon_master_translator.reset} {reset};add_connection {custom_secure_mem_instructions_reset_sink_reset_bridge.out_reset} {onchip_mem_s2_translator.reset} {reset};add_connection {clk_0_clk_clock_bridge.out_clk} {custom_secure_mem_instructions_avalon_master_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {onchip_mem_s2_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {custom_secure_mem_instructions_reset_sink_reset_bridge.clk} {clock};add_interface {clk_0_clk} {clock} {slave};set_interface_property {clk_0_clk} {EXPORT_OF} {clk_0_clk_clock_bridge.in_clk};add_interface {custom_secure_mem_instructions_reset_sink_reset_bridge_in_reset} {reset} {slave};set_interface_property {custom_secure_mem_instructions_reset_sink_reset_bridge_in_reset} {EXPORT_OF} {custom_secure_mem_instructions_reset_sink_reset_bridge.in_reset};add_interface {custom_secure_mem_instructions_avalon_master} {avalon} {slave};set_interface_property {custom_secure_mem_instructions_avalon_master} {EXPORT_OF} {custom_secure_mem_instructions_avalon_master_translator.avalon_anti_master_0};add_interface {onchip_mem_s2} {avalon} {master};set_interface_property {onchip_mem_s2} {EXPORT_OF} {onchip_mem_s2_translator.avalon_anti_slave_0};set_module_assignment {interconnect_id.custom_secure_mem_instructions.avalon_master} {0};set_module_assignment {interconnect_id.onchip_mem.s2} {0};</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -10011,7 +10327,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="addressSpan">
     <type>java.math.BigInteger</type>
-    <value>17179869184</value>
+    <value>262144</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -10195,7 +10511,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="readLatency">
     <type>int</type>
-    <value>0</value>
+    <value>1</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -10310,7 +10626,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>custom_secure_mem_instructions_avalon_master_address</name>
     <direction>Input</direction>
-    <width>32</width>
+    <width>16</width>
     <role>address</role>
    </port>
    <port>
@@ -15426,11 +15742,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>ci_slave</endConnectionPoint>
  </connection>
  <connection
-   name="cpu_custom_instruction_master_translator.comb_ci_master/cpu_custom_instruction_master_comb_xconnect.ci_slave"
+   name="cpu_custom_instruction_master_translator.multi_ci_master/cpu_custom_instruction_master_multi_xconnect.ci_slave"
    kind="nios_custom_instruction"
    version="20.1"
-   start="cpu_custom_instruction_master_translator.comb_ci_master"
-   end="cpu_custom_instruction_master_comb_xconnect.ci_slave">
+   start="cpu_custom_instruction_master_translator.multi_ci_master"
+   end="cpu_custom_instruction_master_multi_xconnect.ci_slave">
   <parameter name="CIName">
    <type>java.lang.String</type>
    <value></value>
@@ -15488,16 +15804,16 @@ parameters are a RESULT of the module parameters. -->
    <valid>true</valid>
   </parameter>
   <startModule>cpu_custom_instruction_master_translator</startModule>
-  <startConnectionPoint>comb_ci_master</startConnectionPoint>
-  <endModule>cpu_custom_instruction_master_comb_xconnect</endModule>
+  <startConnectionPoint>multi_ci_master</startConnectionPoint>
+  <endModule>cpu_custom_instruction_master_multi_xconnect</endModule>
   <endConnectionPoint>ci_slave</endConnectionPoint>
  </connection>
  <connection
-   name="cpu_custom_instruction_master_comb_xconnect.ci_master0/cpu_custom_instruction_master_comb_slave_translator0.ci_slave"
+   name="cpu_custom_instruction_master_multi_xconnect.ci_master0/cpu_custom_instruction_master_multi_slave_translator0.ci_slave"
    kind="nios_custom_instruction"
    version="20.1"
-   start="cpu_custom_instruction_master_comb_xconnect.ci_master0"
-   end="cpu_custom_instruction_master_comb_slave_translator0.ci_slave">
+   start="cpu_custom_instruction_master_multi_xconnect.ci_master0"
+   end="cpu_custom_instruction_master_multi_slave_translator0.ci_slave">
   <parameter name="CIName">
    <type>java.lang.String</type>
    <value></value>
@@ -15554,16 +15870,16 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>cpu_custom_instruction_master_comb_xconnect</startModule>
+  <startModule>cpu_custom_instruction_master_multi_xconnect</startModule>
   <startConnectionPoint>ci_master0</startConnectionPoint>
-  <endModule>cpu_custom_instruction_master_comb_slave_translator0</endModule>
+  <endModule>cpu_custom_instruction_master_multi_slave_translator0</endModule>
   <endConnectionPoint>ci_slave</endConnectionPoint>
  </connection>
  <connection
-   name="cpu_custom_instruction_master_comb_slave_translator0.ci_master/custom_secure_mem_instructions.nios_custom_instruction_slave"
+   name="cpu_custom_instruction_master_multi_slave_translator0.ci_master/custom_secure_mem_instructions.nios_custom_instruction_slave"
    kind="nios_custom_instruction"
    version="20.1"
-   start="cpu_custom_instruction_master_comb_slave_translator0.ci_master"
+   start="cpu_custom_instruction_master_multi_slave_translator0.ci_master"
    end="custom_secure_mem_instructions.nios_custom_instruction_slave">
   <parameter name="CIName">
    <type>java.lang.String</type>
@@ -15621,7 +15937,7 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>cpu_custom_instruction_master_comb_slave_translator0</startModule>
+  <startModule>cpu_custom_instruction_master_multi_slave_translator0</startModule>
   <startConnectionPoint>ci_master</startConnectionPoint>
   <endModule>custom_secure_mem_instructions</endModule>
   <endConnectionPoint>nios_custom_instruction_slave</endConnectionPoint>
@@ -17175,7 +17491,7 @@ parameters are a RESULT of the module parameters. -->
   <version>20.1</version>
  </plugin>
  <plugin>
-  <instanceCount>4</instanceCount>
+  <instanceCount>5</instanceCount>
   <name>nios_custom_instruction_master</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
@@ -17359,5 +17675,5 @@ parameters are a RESULT of the module parameters. -->
   <version>20.1</version>
  </plugin>
  <reportVersion>20.1 720</reportVersion>
- <uniqueIdentifier>24418C393F0400000178ED0A4CEF</uniqueIdentifier>
+ <uniqueIdentifier>24418C393F0400000179063C7B12</uniqueIdentifier>
 </EnsembleReport>

@@ -3153,7 +3153,8 @@ endmodule
 
 module nios2_secure_memory_cpu_cpu (
                                      // inputs:
-                                      E_ci_combo_result,
+                                      A_ci_multi_done,
+                                      A_ci_multi_result,
                                       clk,
                                       d_readdata,
                                       d_waitrequest,
@@ -3171,18 +3172,23 @@ module nios2_secure_memory_cpu_cpu (
                                       reset_req,
 
                                      // outputs:
-                                      E_ci_combo_a,
-                                      E_ci_combo_b,
-                                      E_ci_combo_c,
-                                      E_ci_combo_dataa,
-                                      E_ci_combo_datab,
-                                      E_ci_combo_estatus,
-                                      E_ci_combo_ipending,
-                                      E_ci_combo_n,
-                                      E_ci_combo_readra,
-                                      E_ci_combo_readrb,
-                                      E_ci_combo_status,
-                                      E_ci_combo_writerc,
+                                      A_ci_multi_a,
+                                      A_ci_multi_b,
+                                      A_ci_multi_c,
+                                      A_ci_multi_clk_en,
+                                      A_ci_multi_clock,
+                                      A_ci_multi_dataa,
+                                      A_ci_multi_datab,
+                                      A_ci_multi_estatus,
+                                      A_ci_multi_ipending,
+                                      A_ci_multi_n,
+                                      A_ci_multi_readra,
+                                      A_ci_multi_readrb,
+                                      A_ci_multi_reset,
+                                      A_ci_multi_reset_req,
+                                      A_ci_multi_start,
+                                      A_ci_multi_status,
+                                      A_ci_multi_writerc,
                                       M_valid_ignoring_refetch,
                                       d_address,
                                       d_byteenable,
@@ -3198,18 +3204,23 @@ module nios2_secure_memory_cpu_cpu (
                                    )
 ;
 
-  output  [  4: 0] E_ci_combo_a;
-  output  [  4: 0] E_ci_combo_b;
-  output  [  4: 0] E_ci_combo_c;
-  output  [ 31: 0] E_ci_combo_dataa;
-  output  [ 31: 0] E_ci_combo_datab;
-  output           E_ci_combo_estatus;
-  output  [ 31: 0] E_ci_combo_ipending;
-  output  [  7: 0] E_ci_combo_n;
-  output           E_ci_combo_readra;
-  output           E_ci_combo_readrb;
-  output           E_ci_combo_status;
-  output           E_ci_combo_writerc;
+  output  [  4: 0] A_ci_multi_a;
+  output  [  4: 0] A_ci_multi_b;
+  output  [  4: 0] A_ci_multi_c;
+  output           A_ci_multi_clk_en;
+  output           A_ci_multi_clock;
+  output  [ 31: 0] A_ci_multi_dataa;
+  output  [ 31: 0] A_ci_multi_datab;
+  output           A_ci_multi_estatus;
+  output  [ 31: 0] A_ci_multi_ipending;
+  output  [  7: 0] A_ci_multi_n;
+  output           A_ci_multi_readra;
+  output           A_ci_multi_readrb;
+  output           A_ci_multi_reset;
+  output           A_ci_multi_reset_req;
+  output           A_ci_multi_start;
+  output           A_ci_multi_status;
+  output           A_ci_multi_writerc;
   output           M_valid_ignoring_refetch;
   output  [ 16: 0] d_address;
   output  [  3: 0] d_byteenable;
@@ -3222,7 +3233,8 @@ module nios2_secure_memory_cpu_cpu (
   output           debug_reset_request;
   output  [ 16: 0] i_address;
   output           i_read;
-  input   [ 31: 0] E_ci_combo_result;
+  input            A_ci_multi_done;
+  input   [ 31: 0] A_ci_multi_result;
   input            clk;
   input   [ 31: 0] d_readdata;
   input            d_waitrequest;
@@ -3244,6 +3256,26 @@ reg     [ 16: 0] A_br_jmp_target_pcb;
 wire    [ 16: 0] A_br_jmp_target_pcb_nxt;
 reg     [ 16: 0] A_br_taken_baddr;
 wire             A_cancel;
+wire    [  4: 0] A_ci_multi_a;
+wire    [  4: 0] A_ci_multi_b;
+wire    [  4: 0] A_ci_multi_c;
+wire             A_ci_multi_clk_en;
+wire             A_ci_multi_clock;
+wire    [ 31: 0] A_ci_multi_dataa;
+wire    [ 31: 0] A_ci_multi_datab;
+wire             A_ci_multi_estatus;
+wire    [ 31: 0] A_ci_multi_ipending;
+wire    [  7: 0] A_ci_multi_n;
+wire             A_ci_multi_readra;
+wire             A_ci_multi_readrb;
+wire             A_ci_multi_reset;
+wire             A_ci_multi_reset_req;
+reg     [ 31: 0] A_ci_multi_src1;
+reg     [ 31: 0] A_ci_multi_src2;
+reg              A_ci_multi_stall;
+reg              A_ci_multi_start;
+wire             A_ci_multi_status;
+wire             A_ci_multi_writerc;
 reg              A_cmp_result;
 reg              A_ctrl_a_not_src;
 wire             A_ctrl_a_not_src_nxt;
@@ -3950,18 +3982,6 @@ wire             E_br_mispredict;
 wire             E_br_result;
 reg     [ 16: 0] E_br_taken_baddr;
 wire             E_cancel;
-wire    [  4: 0] E_ci_combo_a;
-wire    [  4: 0] E_ci_combo_b;
-wire    [  4: 0] E_ci_combo_c;
-wire    [ 31: 0] E_ci_combo_dataa;
-wire    [ 31: 0] E_ci_combo_datab;
-wire             E_ci_combo_estatus;
-wire    [ 31: 0] E_ci_combo_ipending;
-wire    [  7: 0] E_ci_combo_n;
-wire             E_ci_combo_readra;
-wire             E_ci_combo_readrb;
-wire             E_ci_combo_status;
-wire             E_ci_combo_writerc;
 wire             E_cmp_result;
 reg     [  1: 0] E_compare_op;
 reg     [ 31: 0] E_control_reg_rddata;
@@ -7069,7 +7089,7 @@ defparam nios2_secure_memory_cpu_cpu_ic_tag.lpm_file = "nios2_secure_memory_cpu_
     M_pc_plus_one;
 
   assign A_pipe_flush_baddr_nxt = {A_pipe_flush_waddr_nxt, 2'b00};
-  assign A_stall = A_mem_stall;
+  assign A_stall = A_mem_stall|A_ci_multi_stall;
   assign A_en = ~A_stall;
   always @(posedge clk or negedge reset_n)
     begin
@@ -7297,8 +7317,9 @@ defparam nios2_secure_memory_cpu_cpu_ic_tag.lpm_file = "nios2_secure_memory_cpu_
 
 
   assign A_pipe_flush_baddr = {A_pipe_flush_waddr, 2'b00};
-  assign A_slow_inst_result_en = A_ctrl_ld;
-  assign A_slow_inst_result_nxt = (A_ctrl_ld32)? d_readdata :
+  assign A_slow_inst_result_en = A_ctrl_custom_multi|A_ctrl_ld;
+  assign A_slow_inst_result_nxt = (A_ctrl_custom_multi)? A_ci_multi_result :
+    (A_ctrl_ld32)? d_readdata :
     A_slow_ld_data_aligned_nxt;
 
   always @(posedge clk or negedge reset_n)
@@ -7310,7 +7331,7 @@ defparam nios2_secure_memory_cpu_cpu_ic_tag.lpm_file = "nios2_secure_memory_cpu_
     end
 
 
-  assign A_slow_inst_sel_nxt = A_en ? 0 : A_ctrl_ld;
+  assign A_slow_inst_sel_nxt = A_en ? 0 : A_ctrl_custom_multi|A_ctrl_ld;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
@@ -7552,8 +7573,7 @@ defparam nios2_secure_memory_cpu_cpu_register_bank_b.lpm_file = "nios2_secure_me
     ({32 {E_ctrl_logic}} & E_logic_result) |
     ({32 {E_ctrl_retaddr}} & {{15{1'b0}},{E_extra_pc, 2'b00}}) |
     ({32 {E_ctrl_st_ex}} & {31'b0, E_up_ex_mon_state_latest}) |
-    ({32 {E_ctrl_custom_combo}} & E_ci_combo_result) |
-    ({32 {(~(E_ctrl_cmp)) && (~(E_ctrl_logic)) && (~(E_ctrl_retaddr)) && (~(E_ctrl_st_ex)) && (~(E_ctrl_custom_combo))}} & E_arith_result[31 : 0]);
+    ({32 {(~(E_ctrl_cmp)) && (~(E_ctrl_logic)) && (~(E_ctrl_retaddr)) && (~(E_ctrl_st_ex))}} & E_arith_result[31 : 0]);
 
   assign E_sth_data = E_src2_reg[15 : 0];
   assign E_stw_data = E_src2_reg[31 : 0];
@@ -8124,19 +8144,63 @@ defparam nios2_secure_memory_cpu_cpu_register_bank_b.lpm_file = "nios2_secure_me
   defparam the_nios2_rtl.SHADOW_PRESENT = 0,
            the_nios2_rtl.SHADOW_REGISTER_SET_SIZE = 1;
 
-  assign E_ci_combo_dataa = E_src1;
-  assign E_ci_combo_datab = E_src2;
-  assign E_ci_combo_ipending = W_ipending_reg;
-  assign E_ci_combo_status = W_status_reg[0];
-  assign E_ci_combo_estatus = W_estatus_reg[0];
-  assign E_ci_combo_n = E_iw_custom_n;
-  assign E_ci_combo_a = E_iw_a;
-  assign E_ci_combo_b = E_iw_b;
-  assign E_ci_combo_c = E_iw_c;
-  assign E_ci_combo_readra = E_iw_custom_readra;
-  assign E_ci_combo_readrb = E_iw_custom_readrb;
-  assign E_ci_combo_writerc = E_iw_custom_writerc;
+  assign A_ci_multi_dataa = A_ci_multi_src1;
+  assign A_ci_multi_datab = A_ci_multi_src2;
+  assign A_ci_multi_ipending = A_ci_multi_ipending;
+  assign A_ci_multi_status = A_ci_multi_status;
+  assign A_ci_multi_estatus = A_ci_multi_estatus;
+  assign A_ci_multi_n = A_iw_custom_n;
+  assign A_ci_multi_a = A_iw_a;
+  assign A_ci_multi_b = A_iw_b;
+  assign A_ci_multi_c = A_iw_c;
+  assign A_ci_multi_readra = A_iw_custom_readra;
+  assign A_ci_multi_readrb = A_iw_custom_readrb;
+  assign A_ci_multi_writerc = A_iw_custom_writerc;
   //custom_instruction_master, which is an e_custom_instruction_master
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          A_ci_multi_src1 <= 0;
+      else if (A_en)
+          A_ci_multi_src1 <= M_src1;
+    end
+
+
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          A_ci_multi_src2 <= 0;
+      else if (A_en)
+          A_ci_multi_src2 <= M_src2;
+    end
+
+
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          A_ci_multi_stall <= 0;
+      else 
+        A_ci_multi_stall <= A_ci_multi_stall ? ~A_ci_multi_done : 
+                (M_ctrl_custom_multi & M_valid & A_en);
+
+    end
+
+
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          A_ci_multi_start <= 0;
+      else 
+        A_ci_multi_start <= A_ci_multi_start ? 1'b0 : 
+                (M_ctrl_custom_multi & M_valid & A_en);
+
+    end
+
+
+  assign A_ci_multi_clk_en = A_ci_multi_stall;
+  assign A_ci_multi_clock = clk;
+  assign A_ci_multi_reset = ~reset_n;
+  assign A_ci_multi_reset_req = reset_req;
   assign E_src1_eq_src2 = E_logic_result == 0;
   assign A_eret_src = W_estatus_reg[0];
   assign W_status_reg_pie_inst_nxt = A_op_eret         ? A_eret_src :
@@ -8598,7 +8662,7 @@ defparam nios2_secure_memory_cpu_cpu_register_bank_b.lpm_file = "nios2_secure_me
     end
 
 
-  assign D_ctrl_custom_combo = D_op_custom_secure_mem_instructions;
+  assign D_ctrl_custom_combo = 1'b0;
   assign E_ctrl_custom_combo_nxt = D_ctrl_custom_combo;
   always @(posedge clk or negedge reset_n)
     begin
@@ -8639,7 +8703,7 @@ defparam nios2_secure_memory_cpu_cpu_register_bank_b.lpm_file = "nios2_secure_me
     end
 
 
-  assign D_ctrl_custom_multi = 1'b0;
+  assign D_ctrl_custom_multi = D_op_custom_secure_mem_instructions;
   assign E_ctrl_custom_multi_nxt = D_ctrl_custom_multi;
   always @(posedge clk or negedge reset_n)
     begin
@@ -12103,6 +12167,7 @@ defparam nios2_secure_memory_cpu_cpu_register_bank_b.lpm_file = "nios2_secure_me
     D_op_opx_rsv42|
     D_op_opx_rsv43|
     D_op_rdctl|
+    D_op_custom_secure_mem_instructions|
     D_op_muli|
     D_op_mul|
     D_op_opx_rsv47|

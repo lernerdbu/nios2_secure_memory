@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Apr 19, 2021 10:14:01 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1618884841606</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Apr 24, 2021 7:39:22 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1619307562788</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\dlerner\Documents\FPGA\EC544_Project\software\mem_test_small_custom_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\dlerner\Documents\FPGA\EC544_Project\nios2_secure_memory.sopcinfo</SopcDesignFile>

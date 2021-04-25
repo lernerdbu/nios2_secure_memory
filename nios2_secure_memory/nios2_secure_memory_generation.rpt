@@ -56,33 +56,33 @@ Info: nios2_secure_memory.jtag_uart: JTAG UART IP input clock need to be at leas
 Info: nios2_secure_memory.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
 Info: nios2_secure_memory.sysid: Time stamp will be automatically updated when this component is generated.
 Info: nios2_secure_memory: Generating nios2_secure_memory "nios2_secure_memory" for QUARTUS_SYNTH
-Info: Interconnect is inserted between master custom_secure_mem_instructions.avalon_master and slave onchip_mem.s2 because the master has address signal 32 bit wide, but the slave is 13 bit wide.
+Info: Interconnect is inserted between master custom_secure_mem_instructions.avalon_master and slave onchip_mem.s2 because the master has address signal 16 bit wide, but the slave is 13 bit wide.
 Info: Interconnect is inserted between master custom_secure_mem_instructions.avalon_master and slave onchip_mem.s2 because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
-Warning: nios2_secure_memory: "No matching role found for custom_secure_mem_instructions:nios_custom_instruction_slave:clk_en (clk_en)"
-Warning: nios2_secure_memory: "No matching role found for custom_secure_mem_instructions:nios_custom_instruction_slave:start (start)"
-Warning: nios2_secure_memory: "No matching role found for custom_secure_mem_instructions:nios_custom_instruction_slave:done (done)"
+Warning: nios2_secure_memory: "No matching role found for cpu_custom_instruction_master_translator:ci_slave:ci_slave_result (result)"
+Warning: nios2_secure_memory: "No matching role found for cpu_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: nios2_secure_memory: "No matching role found for cpu_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
 Info: cpu: "nios2_secure_memory" instantiated altera_nios2_gen2 "cpu"
 Info: custom_secure_mem_instructions: "nios2_secure_memory" instantiated secure_memory "custom_secure_mem_instructions"
 Info: jtag_uart: Starting RTL generation for module 'nios2_secure_memory_jtag_uart'
-Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios2_secure_memory_jtag_uart --dir=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0009_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0009_jtag_uart_gen//nios2_secure_memory_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios2_secure_memory_jtag_uart --dir=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0035_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0035_jtag_uart_gen//nios2_secure_memory_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart: Done RTL generation for module 'nios2_secure_memory_jtag_uart'
 Info: jtag_uart: "nios2_secure_memory" instantiated altera_avalon_jtag_uart "jtag_uart"
 Info: led_pio: Starting RTL generation for module 'nios2_secure_memory_led_pio'
-Info: led_pio:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios2_secure_memory_led_pio --dir=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0010_led_pio_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0010_led_pio_gen//nios2_secure_memory_led_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: led_pio:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios2_secure_memory_led_pio --dir=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0036_led_pio_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0036_led_pio_gen//nios2_secure_memory_led_pio_component_configuration.pl  --do_build_sim=0  ]
 Info: led_pio: Done RTL generation for module 'nios2_secure_memory_led_pio'
 Info: led_pio: "nios2_secure_memory" instantiated altera_avalon_pio "led_pio"
 Info: onchip_mem: Starting RTL generation for module 'nios2_secure_memory_onchip_mem'
-Info: onchip_mem:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios2_secure_memory_onchip_mem --dir=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0011_onchip_mem_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0011_onchip_mem_gen//nios2_secure_memory_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios2_secure_memory_onchip_mem --dir=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0037_onchip_mem_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0037_onchip_mem_gen//nios2_secure_memory_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_mem: Done RTL generation for module 'nios2_secure_memory_onchip_mem'
 Info: onchip_mem: "nios2_secure_memory" instantiated altera_avalon_onchip_memory2 "onchip_mem"
 Info: sys_clk_timer: Starting RTL generation for module 'nios2_secure_memory_sys_clk_timer'
-Info: sys_clk_timer:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios2_secure_memory_sys_clk_timer --dir=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0012_sys_clk_timer_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0012_sys_clk_timer_gen//nios2_secure_memory_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk_timer:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios2_secure_memory_sys_clk_timer --dir=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0038_sys_clk_timer_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0038_sys_clk_timer_gen//nios2_secure_memory_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
 Info: sys_clk_timer: Done RTL generation for module 'nios2_secure_memory_sys_clk_timer'
 Info: sys_clk_timer: "nios2_secure_memory" instantiated altera_avalon_timer "sys_clk_timer"
 Info: sysid: "nios2_secure_memory" instantiated altera_avalon_sysid_qsys "sysid"
 Info: cpu_custom_instruction_master_translator: "nios2_secure_memory" instantiated altera_customins_master_translator "cpu_custom_instruction_master_translator"
-Info: cpu_custom_instruction_master_comb_xconnect: "nios2_secure_memory" instantiated altera_customins_xconnect "cpu_custom_instruction_master_comb_xconnect"
-Info: cpu_custom_instruction_master_comb_slave_translator0: "nios2_secure_memory" instantiated altera_customins_slave_translator "cpu_custom_instruction_master_comb_slave_translator0"
+Info: cpu_custom_instruction_master_multi_xconnect: "nios2_secure_memory" instantiated altera_customins_xconnect "cpu_custom_instruction_master_multi_xconnect"
+Info: cpu_custom_instruction_master_multi_slave_translator0: "nios2_secure_memory" instantiated altera_customins_slave_translator "cpu_custom_instruction_master_multi_slave_translator0"
 Info: mm_interconnect_0: "nios2_secure_memory" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
@@ -94,21 +94,21 @@ Info: mm_interconnect_1: "nios2_secure_memory" instantiated altera_mm_interconne
 Info: irq_mapper: "nios2_secure_memory" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "nios2_secure_memory" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'nios2_secure_memory_cpu_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=nios2_secure_memory_cpu_cpu --dir=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0019_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8737_7369382269821456821.dir/0019_cpu_gen//nios2_secure_memory_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2021.04.19 22:10:01 (*) Starting Nios II generation
-Info: cpu: # 2021.04.19 22:10:01 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2021.04.19 22:10:01 (*)   Creating all objects for CPU
-Info: cpu: # 2021.04.19 22:10:01 (*)     Testbench
-Info: cpu: # 2021.04.19 22:10:01 (*)     Instruction decoding
-Info: cpu: # 2021.04.19 22:10:01 (*)       Instruction fields
-Info: cpu: # 2021.04.19 22:10:01 (*)       Instruction decodes
-Info: cpu: # 2021.04.19 22:10:02 (*)       Signals for RTL simulation waveforms
-Info: cpu: # 2021.04.19 22:10:02 (*)       Instruction controls
-Info: cpu: # 2021.04.19 22:10:02 (*)     Pipeline frontend
-Info: cpu: # 2021.04.19 22:10:02 (*)     Pipeline backend
-Info: cpu: # 2021.04.19 22:10:03 (*)   Generating RTL from CPU objects
-Info: cpu: # 2021.04.19 22:10:03 (*)   Creating plain-text RTL
-Info: cpu: # 2021.04.19 22:10:04 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=nios2_secure_memory_cpu_cpu --dir=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0045_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/dlerner/AppData/Local/Temp/alt8741_4525710591920665357.dir/0045_cpu_gen//nios2_secure_memory_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2021.04.24 19:35:20 (*) Starting Nios II generation
+Info: cpu: # 2021.04.24 19:35:20 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.04.24 19:35:20 (*)   Creating all objects for CPU
+Info: cpu: # 2021.04.24 19:35:20 (*)     Testbench
+Info: cpu: # 2021.04.24 19:35:20 (*)     Instruction decoding
+Info: cpu: # 2021.04.24 19:35:20 (*)       Instruction fields
+Info: cpu: # 2021.04.24 19:35:20 (*)       Instruction decodes
+Info: cpu: # 2021.04.24 19:35:21 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2021.04.24 19:35:21 (*)       Instruction controls
+Info: cpu: # 2021.04.24 19:35:21 (*)     Pipeline frontend
+Info: cpu: # 2021.04.24 19:35:21 (*)     Pipeline backend
+Info: cpu: # 2021.04.24 19:35:23 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.04.24 19:35:23 (*)   Creating plain-text RTL
+Info: cpu: # 2021.04.24 19:35:24 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'nios2_secure_memory_cpu_cpu'
 Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
 Info: custom_secure_mem_instructions_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "custom_secure_mem_instructions_avalon_master_translator"

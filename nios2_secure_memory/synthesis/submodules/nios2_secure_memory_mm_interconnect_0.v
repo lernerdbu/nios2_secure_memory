@@ -9,7 +9,7 @@
 module nios2_secure_memory_mm_interconnect_0 (
 		input  wire        clk_0_clk_clk,                                                         //                                                       clk_0_clk.clk
 		input  wire        custom_secure_mem_instructions_reset_sink_reset_bridge_in_reset_reset, // custom_secure_mem_instructions_reset_sink_reset_bridge_in_reset.reset
-		input  wire [31:0] custom_secure_mem_instructions_avalon_master_address,                  //                    custom_secure_mem_instructions_avalon_master.address
+		input  wire [15:0] custom_secure_mem_instructions_avalon_master_address,                  //                    custom_secure_mem_instructions_avalon_master.address
 		output wire        custom_secure_mem_instructions_avalon_master_waitrequest,              //                                                                .waitrequest
 		input  wire [3:0]  custom_secure_mem_instructions_avalon_master_byteenable,               //                                                                .byteenable
 		input  wire        custom_secure_mem_instructions_avalon_master_chipselect,               //                                                                .chipselect
@@ -28,7 +28,7 @@ module nios2_secure_memory_mm_interconnect_0 (
 	wire         custom_secure_mem_instructions_avalon_master_translator_avalon_universal_master_0_waitrequest;   // onchip_mem_s2_translator:uav_waitrequest -> custom_secure_mem_instructions_avalon_master_translator:uav_waitrequest
 	wire  [31:0] custom_secure_mem_instructions_avalon_master_translator_avalon_universal_master_0_readdata;      // onchip_mem_s2_translator:uav_readdata -> custom_secure_mem_instructions_avalon_master_translator:uav_readdata
 	wire         custom_secure_mem_instructions_avalon_master_translator_avalon_universal_master_0_debugaccess;   // custom_secure_mem_instructions_avalon_master_translator:uav_debugaccess -> onchip_mem_s2_translator:uav_debugaccess
-	wire  [33:0] custom_secure_mem_instructions_avalon_master_translator_avalon_universal_master_0_address;       // custom_secure_mem_instructions_avalon_master_translator:uav_address -> onchip_mem_s2_translator:uav_address
+	wire  [17:0] custom_secure_mem_instructions_avalon_master_translator_avalon_universal_master_0_address;       // custom_secure_mem_instructions_avalon_master_translator:uav_address -> onchip_mem_s2_translator:uav_address
 	wire         custom_secure_mem_instructions_avalon_master_translator_avalon_universal_master_0_read;          // custom_secure_mem_instructions_avalon_master_translator:uav_read -> onchip_mem_s2_translator:uav_read
 	wire   [3:0] custom_secure_mem_instructions_avalon_master_translator_avalon_universal_master_0_byteenable;    // custom_secure_mem_instructions_avalon_master_translator:uav_byteenable -> onchip_mem_s2_translator:uav_byteenable
 	wire         custom_secure_mem_instructions_avalon_master_translator_avalon_universal_master_0_readdatavalid; // onchip_mem_s2_translator:uav_readdatavalid -> custom_secure_mem_instructions_avalon_master_translator:uav_readdatavalid
@@ -38,11 +38,11 @@ module nios2_secure_memory_mm_interconnect_0 (
 	wire   [2:0] custom_secure_mem_instructions_avalon_master_translator_avalon_universal_master_0_burstcount;    // custom_secure_mem_instructions_avalon_master_translator:uav_burstcount -> onchip_mem_s2_translator:uav_burstcount
 
 	altera_merlin_master_translator #(
-		.AV_ADDRESS_W                (32),
+		.AV_ADDRESS_W                (16),
 		.AV_DATA_W                   (32),
 		.AV_BURSTCOUNT_W             (1),
 		.AV_BYTEENABLE_W             (4),
-		.UAV_ADDRESS_W               (34),
+		.UAV_ADDRESS_W               (18),
 		.UAV_BURSTCOUNT_W            (3),
 		.USE_READ                    (0),
 		.USE_WRITE                   (1),
@@ -104,7 +104,7 @@ module nios2_secure_memory_mm_interconnect_0 (
 		.AV_BURSTCOUNT_W                (1),
 		.AV_BYTEENABLE_W                (4),
 		.UAV_BYTEENABLE_W               (4),
-		.UAV_ADDRESS_W                  (34),
+		.UAV_ADDRESS_W                  (18),
 		.UAV_BURSTCOUNT_W               (3),
 		.AV_READLATENCY                 (1),
 		.USE_READDATAVALID              (0),
