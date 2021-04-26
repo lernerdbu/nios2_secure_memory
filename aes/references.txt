@@ -1,0 +1,1 @@
+The aes_128 module was taken from OpenCores.org and was modified for the specific use of this project.
