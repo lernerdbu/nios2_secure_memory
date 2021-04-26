@@ -120,7 +120,7 @@ void GetInputString( char* entry, int size, FILE * stream )
 *  Purpose: Gathers a range of memory from the user.
 *
 ******************************************************************/
-static int MemGetAddressRange(int* base_address, int* end_address)
+static int MemGetAddress(int* base_address)
 {
 
   char line[12];
@@ -142,31 +142,67 @@ static int MemGetAddressRange(int* base_address, int* end_address)
       printf(" -ERROR: Invalid base address entered.  Address must be in the form '0x800000'\n\n");
       continue;
     }
-    
-    /* Get the end address */
-    printf("End Address:\n");
-    printf(">");
 
-    GetInputString( line, sizeof(line), stdin );
-    
-    /* Check the format to make sure it was entered as hex */
-    if((*end_address = strtol(line, &pend, 16)) < 0)
-    {
-      printf(" -ERROR: Invalid end address entered.  Address must be in the form '0x8FFFFF'\n\n");
-      continue;
-    }
-    
-    /* Make sure end address is greater than base address. */
-    if (*end_address <= *base_address)
-    {
-      printf(" -ERROR: End address must be greater than the start address\n\n");
-
-      continue;
-    }
     break;
   }
 
   return(0);
+}
+
+static void WriteString(int addr, char* text)
+{
+	int offset = 0;
+	int len = strlen(text);
+	int* next = text;
+
+	while (next < (text+len)) {
+		IOWR_32DIRECT(addr, offset, next[0]);
+		next++;
+		offset += 4;
+	}
+}
+
+static void WriteStringSecure(int addr, char* text)
+{
+	int offset = 0;
+	int len = strlen(text);
+	int* next = text;
+
+	while (next < (text+len)) {
+		ALT_CI_CUSTOM_SECURE_MEM_INSTRUCTIONS(1, next[0], addr+offset);
+		next++;
+		offset += 4;
+	}
+}
+
+static char* ReadString(int addr, int len)
+{
+	int offset = 0;
+	char* val = malloc(len);
+	int* next = val;
+
+	while (offset < len*4) {
+		next[0] = IORD_32DIRECT(addr, offset);
+		next++;
+		offset += 4;
+	}
+
+	return val;
+}
+
+static char* ReadStringSecure(int addr, int len)
+{
+	int offset = 0;
+	char* val = malloc(len);
+	int* next = val;
+
+	while (offset < len*4) {
+		next[0] = ALT_CI_CUSTOM_SECURE_MEM_INSTRUCTIONS(0, 0, addr+offset);
+		next++;
+		offset += 4;
+	}
+
+	return val;
 }
 
 /******************************************************************
@@ -183,53 +219,41 @@ static int MemGetAddressRange(int* base_address, int* end_address)
 static void TestRam(void)
 {
   
-  int memory_base, memory_end, memory_size, offset;
-  int ret_val = 0;
+  int memory_base;
+  char* text = "Hello world";
+  char* ret_val = 0;
 
   /* Find out what range of memory we are testing */
-  MemGetAddressRange(&memory_base, &memory_end);
-  memory_size = (memory_end - memory_base);
+  MemGetAddress(&memory_base);
 
   printf("\n");
-  printf("Testing RAM from 0x%X to 0x%X\n\n", memory_base, (memory_base + memory_size));
+  printf("Testing RAM at 0x%X\n\n", memory_base);
 
   
   // Write initial data
-  for (offset = 0; offset <= memory_size; offset+=4)
-    {
-      IOWR_32DIRECT(memory_base, offset, 0x12345678);
-      printf("Writing data 0x12345678 in addr 0x%X\n", memory_base+offset);
-    }
+  printf("Writing string \"%s\" in addr 0x%X\n", text, memory_base);
+  WriteString(memory_base, text);
+
   // Read data
-  for (offset = 0; offset <= memory_size; offset+=4)
-    {
-      ret_val = IORD_32DIRECT(memory_base, offset);
-      printf("Read data 0x%X from addr 0x%X\n", ret_val, memory_base+offset);
-    }
+  ret_val = ReadString(memory_base, 3);
+  printf("Read data \"%s\" from addr 0x%X\n", ret_val, memory_base);
+
   // Read secure data
-  for (offset = memory_base; offset <= memory_end; offset +=4)
-	{
-      ret_val = ALT_CI_CUSTOM_SECURE_MEM_INSTRUCTIONS(0, 0, offset);
-      printf("Read secure data 0x%X from addr 0x%X\n", ret_val, offset);
-    }
+  ret_val = ReadStringSecure(memory_base, 3);
+  printf("Read secure data \"%s\" from addr 0x%X\n", ret_val, memory_base);
+
   // Write secure data
-  for (offset = memory_base; offset <= memory_end; offset +=4)
-	{
-      ALT_CI_CUSTOM_SECURE_MEM_INSTRUCTIONS(1, 0xDEADBEEF, offset);
-      printf("Writing secure data 0xDEADBEEF in addr 0x%X\n", offset);
-    }
+  printf("Writing secure data \"%s\" in addr 0x%X\n", text, memory_base);
+  WriteStringSecure(memory_base, text);
+
   // Read regular data
-  for (offset = 0; offset <= memory_size; offset+=4)
-    {
-      ret_val = IORD_32DIRECT(0xB000, offset);
-      printf("Read data 0x%X from addr 0x%X\n", ret_val, 0xB000+offset);
-    }
+  ret_val = ReadString(memory_base, 3);
+  printf("Read data \"%s\" from addr 0x%X\n", ret_val, memory_base);
+
   // Read secure data
-  for (offset = memory_base; offset <= memory_end; offset +=4)
-	{
-      ret_val = ALT_CI_CUSTOM_SECURE_MEM_INSTRUCTIONS(0, 0, offset);
-      printf("Read secure data 0x%X from addr 0x%X\n", ret_val, offset);
-    }
+  ret_val = ReadStringSecure(memory_base, 3);
+  printf("Read secure data \"%s\" from addr 0x%X\n", ret_val, memory_base);
+
 }
 
 /******************************************************************
